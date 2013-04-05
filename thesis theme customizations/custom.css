@@ -30,14 +30,14 @@ More Info:		http://diythemes.com/thesis/rtfm/custom-css/
 /* ********************FOOTER********************** */
 
 /***Style full width footer***/
-.custom #footer_area {background: #E6E6E6; padding:0.5em; border-top:0px solid #cccccc;}
+.custom #footer_area {background: #888888; padding:0.2em; border-top:0px solid #000000;}
 .custom #footer_area .page {background:transparent;}
 .custom #footer {border-top:0;}
 
 /***FOOTER widget ***/
-.custom #footer_1 {text-align:left; color:#333;}
+.custom #footer_1 {text-align:left; color:#000000;}
 	.custom #footer_1 ul.sidebar_list li.widget {width:30%; margin-right:2%; float:left;}
-		.custom #footer_1 ul.sidebar_list li.widget h3 {color:#000000;}
+		.custom #footer_1 ul.sidebar_list li.widget h3 {background: #888888; color:#000000;}
 		.custom #footer_1 ul.sidebar_list li.widget a {color:#600000; border-bottom:0;}
 		.custom #footer_1 ul.sidebar_list li.widget a:hover {color:#600000;}
 /***FOOTER END***/
@@ -106,7 +106,7 @@ margin-top: 1px;
 .custom #sidebars { border:none; }
 .custom .sidebar h3{
 	height:15px;
-	background-color: #dddddd;
+	background-color: #CFCFCF;
 	font-weight:normal;
 	font-size:12px;
 	color:#000000; 
