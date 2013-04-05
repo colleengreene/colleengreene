@@ -44,7 +44,7 @@ function full_width_nav() { ?>
 	</div>
 <?php }
 remove_action('thesis_hook_before_header', 'thesis_nav_menu');
-add_action('thesis_hook_before_html', 'full_width_nav');
+add_action('thesis_hook_before_content_area', 'full_width_nav');
 /***END FULL WIDTH NAV MENU***/
 
 
