@@ -347,7 +347,7 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .entry-content .button:hover {
-	background-color: #f15123;
+	background-color: #06c; /* Changed by Colleen */
 }
 
 .entry-content .button:hover {
@@ -1084,7 +1084,7 @@ Content Area
 
 .entry-content a {
 	border-bottom: 1px solid #ddd;
-	color: #f15123;
+	color: #06c; /* Changed by Colleen */
 }
 
 .entry-content a:hover {
@@ -1188,7 +1188,7 @@ Content Area
 
 .archive-pagination li a:hover,
 .archive-pagination li.active a {
-	background-color: #f15123;
+	background-color: #06c; /* Changed by Colleen */
 }
 
 .entry-pagination a {
@@ -1296,6 +1296,7 @@ Sidebars
 
 .sidebar a {
 	border-bottom: 1px solid #ddd;
+	color: #06c; /* Changed by Colleen */
 }
 
 .sidebar p:last-child {
