@@ -24,3 +24,22 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+//* Begin changes by Colleen
+//* Add Jetpack share buttons above post
+remove_filter( 'the_content', 'sharing_display', 19 );
+remove_filter( 'the_excerpt', 'sharing_display', 19 );
+
+add_filter( 'the_content', 'sp_share_buttons_above_post', 19 );
+add_filter( 'the_excerpt', 'sp_share_buttons_above_post', 19 );
+
+function sp_share_buttons_above_post( $content = '' ) {
+	if ( function_exists( 'sharing_display' ) ) {
+		return sharing_display() . $content;
+	}
+	else {
+		return $content;
+	}
+}
+
+//* End changes by Colleen
