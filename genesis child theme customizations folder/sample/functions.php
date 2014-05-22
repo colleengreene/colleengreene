@@ -26,6 +26,11 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-footer-widgets', 3 );
 
 //* Begin changes by Colleen
+
+//* Reposition the secondary navigation menu
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+add_action( 'genesis_before_header', 'genesis_do_subnav' );
+
 //* Add Jetpack share buttons above post
 remove_filter( 'the_content', 'sharing_display', 19 );
 remove_filter( 'the_excerpt', 'sharing_display', 19 );
