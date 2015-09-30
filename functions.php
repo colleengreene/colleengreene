@@ -44,20 +44,4 @@ function sp_share_buttons_above_post( $content = '' ) {
 }
 
 
-//* Add Featured Image to RSS Feed
-function cg_post_thumbnail_rss($content) {
-global $post;
-if ( has_post_thumbnail( $post->ID ) ){
-$content = '' . get_the_post_thumbnail( $post->ID, 'rss-image', array( 'style' => 'float:left; margin-right:10px; height: 100px; width: 200px; border: 2px solid #e5e5e5' ) ) . '' . $content;
-}
-return $content;
-}
-/**
-* @author Brad Dalton
-* @example http://wpsites.net/web-design/add-featured-image-thumbnail-from-post-to-rss-feed/
-*/
-add_filter('the_content_feed', 'cg_post_thumbnail_rss');
-add_filter('the_excerpt_rss', 'cg_post_thumbnail_rss');
-
-
 //* End changes by Colleen
