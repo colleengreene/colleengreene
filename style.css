@@ -1161,6 +1161,12 @@ Content Area
 	display: block;
 }
 
+
+/* Tip Box added by Colleen */
+.tip-box { background:#f5f5f5; border:1px solid #999999; position:relative; margin:2px 0px 10px 0px; overflow:hidden; padding:1em; }
+/* End Tip Box */
+
+
 /* Pagination
 --------------------------------------------- */
 
