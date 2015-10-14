@@ -929,7 +929,7 @@ Site Navigation
 	clear: both;
 	color: #999;
 	font-family: Lato, sans-serif;
-	line-height: 1.5;
+	line-height: 0; /* Modified by Colleen */
 	width: 100%;
 }
 
@@ -1598,3 +1598,7 @@ Media Queries
 	}
 
 }
+
+
+/* Custom class added by Colleen for footnote plugin, to make text smaller than post body */
+div .footnotes {font-size: 90%; }
