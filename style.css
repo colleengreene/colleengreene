@@ -1433,8 +1433,8 @@ Media Queries
 	only screen and (min-device-pixel-ratio: 1.5) {
 
 	.header-image .site-header .wrap {
-		background: url(images/logo.png) no-repeat left;
-		background-size: 320px 164px;
+		background: url(images/logo@2x.png) no-repeat left;
+		background-size: 720px 328px;
 	}
 
 }
