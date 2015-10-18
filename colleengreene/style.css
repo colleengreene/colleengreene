@@ -1066,6 +1066,16 @@ Site Navigation
 	text-align: right;
 }
 
+.nav-secondary a: {
+	color: #999999;
+}
+
+.nav-secondary a:hover,
+.nav-secondary .current-menu-item > a {
+	color: #ffffff;
+}
+
+
 
 /*
 Content Area
