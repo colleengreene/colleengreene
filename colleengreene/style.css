@@ -1435,6 +1435,12 @@ Site Footer
 }
 
 
+/* Modified the font color of footer RSS widget heading to match other footer widget headings */
+.widget-title .rsswidget {
+	color: #ffffff;
+}
+
+
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
