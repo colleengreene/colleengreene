@@ -1047,6 +1047,7 @@ Site Navigation
 
 .nav-primary {
 	background-color: #333;
+	text-align: center;
 }
 
 .nav-primary a:hover,
@@ -1062,8 +1063,19 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: #ffffff;
+	background-color: #600000;
+	text-align: right;
 }
+
+.nav-secondary a: {
+	color: #999999;
+}
+
+.nav-secondary a:hover,
+.nav-secondary .current-menu-item > a {
+	color: #ffffff;
+}
+
 
 
 /*
@@ -1423,6 +1435,12 @@ Site Footer
 }
 
 
+/* Modified the font color of footer RSS widget heading to match other footer widget headings */
+.widget-title .rsswidget {
+	color: #ffffff;
+}
+
+
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -1602,3 +1620,11 @@ Media Queries
 
 /* Custom class added by Colleen for footnote plugin, to make text smaller than post body */
 div .footnotes {font-size: 90%; }
+
+/* *** Custom styles added by Colleen for embedded Mailchimp forms *** */
+
+/* Form embedded in pages and posts */
+div #mc_embed_signup { background:#f5f5f5; border:2px dotted #600000; position:relative; margin:2px 0px 2px 0px; overflow:hidden; padding:1em; }
+div #mc_embed_signup_scroll h2 { font-size:150%; color:#600000; font-weight:bold; }
+div.mc-field-group.input-group li { list—style-type: none !important; list-type-image; none !important; list-style: none !important; }
+input#mc-embedded-subscribe { background:#600000; }
