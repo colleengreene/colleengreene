@@ -50,7 +50,7 @@ function sp_share_buttons_above_post( $content = '' ) {
 
 /* ****START HISPANIC NEWSLETTER SIGNUP BOX AFTER POST**** */
 function enews_signup_box() {
-if ( is_single() && has_tag('Mexican genealogy')) { ?>
+if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealogy', 'Hispanic genealogy'))) { ?>
 
 <!-- Start Sign UP Box -->
 <div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span><br />
