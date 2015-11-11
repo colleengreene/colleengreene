@@ -48,7 +48,7 @@ function sp_share_buttons_above_post( $content = '' ) {
 }
 
 
-/* ****START HISPANIC NEWSLETTER SIGNUP BOX AFTER POST**** */
+/* Add eNews Signup Box after Select Posts */
 function enews_signup_box() {
 if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealogy', 'Hispanic genealogy'))) { ?>
 
@@ -60,8 +60,8 @@ Interested in Hispanic genealogy and history?<br />
 
 <?php }
 }
-add_action('genesis_entry_content', 'enews_signup_box', 5);
-/* ****END HISPANIC NEWSLETTER SIGNUP BOX**** */
+add_action('genesis_before_entry', 'enews_signup_box', 1);
+/* End eNews Signup Box after Select Posts */
 
 
 //* Customize the entire footer
