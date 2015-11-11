@@ -1180,9 +1180,9 @@ Content Area
 /* End Tip Box */
 
 /* Sign Up Box added by Colleen */
-.signup-box { background:#600000; border: 2px solid #333; color:#DDDDDD; position:relative; margin:2px 0px 10px 0px; overflow:hidden; padding:1em; font-size:90%; }
-.signup-box a { color:#fefefe; }
-.signup-box-heading { font-size:150%; color:#fefefe; font-weight:bold; }
+.signup-box { background:#F5F5F5; border: 2px dotted #333; color:#333333; font-weight: bold; position:relative; margin:2px 0px 10px 0px; overflow:hidden; padding:1em; font-size:90%; }
+.signup-box a { color:#600000; text-decoration: underline; }
+.signup-box-heading { font-size:150%; color:#600000; font-weight:bold; }
 /* Sign Up Box */
 
 
