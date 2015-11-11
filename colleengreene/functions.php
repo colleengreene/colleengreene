@@ -55,7 +55,7 @@ if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealo
 <!-- Start Sign UP Box -->
 <div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span><br />
 Interested in Hispanic genealogy and history?<br />
-<strong><a href="http://colleengreene.us12.list-manage1.com/subscribe?u=566e975d594e41e054953fe1b&amp;id=baa5909068">SIGN UP NOW</a><strong> to get my FREE email newsletter, <strong><em>Hispanic Heritage Happenings</em></strong>, delivered to your email inbox the 1st and 15th of every month!</strong></strong></div>
+<a href="http://colleengreene.us12.list-manage1.com/subscribe?u=566e975d594e41e054953fe1b&amp;id=baa5909068">SIGN UP NOW with your email address</a> to get my FREE email newsletter, <strong><em>HISPANIC HERITAGE HAPPENINGS</em></strong>, delivered to your inbox the 1st and 15th of every month! Packed with bonus content not featured in my regular blog posts. Your email address will never be sold or shared with others.</div>
 <!-- End Sign Up-->
 
 <?php }
