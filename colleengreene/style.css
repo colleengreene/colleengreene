@@ -747,6 +747,7 @@ Plugins
 
 .enews-widget {
 	color: #999;
+	background-color: #626266; */ Added by Colleen */
 }
 
 .enews-widget .widget-title {
@@ -763,7 +764,9 @@ Plugins
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #600000;
+	/* background-color: #600000; */
+	/* background-color: #472c23; */
+	background-color: #CC9E61;
 	color: #fff;
 	margin: 0;
 	width: 100%;
@@ -823,7 +826,9 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #600000; /* Changed by Colleen */
+	/* background-color: #600000; */ /* Changed by Colleen */
+	/* background-color: #4E2910; */
+	background-color: #541F14;
 }
 
 .site-header .wrap {
@@ -1046,13 +1051,24 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #333;
+	/* background-color: #333; */
+	background-color: #CC9E61; /* Changed by Colleen */
 	text-align: center;
 }
 
-.nav-primary a:hover,
+.nav-primary a { /* Broken out by Colleen */
+	color: #020304;
+	font-weight: bold;
+}
+
+.nav-primary a:hover { /* Broken out by Colleen */
+	color: #626266;
+}
+
 .nav-primary .current-menu-item > a {
-	color: #fff;
+	/* color: #fff; */
+	color: #541F14;
+	text-decoration: underline;
 }
 
 .nav-primary .sub-menu a:hover {
@@ -1063,17 +1079,27 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: #600000;
+	/* background-color: #600000; */
+	background-color: #020304;
 	text-align: right;
 }
 
-.nav-secondary a: {
-	color: #999999;
+.nav-secondary a { /* Modified by Colleen */
+	/* color: #999999; */
+	/* color: #CC9E61; */
+	color: #938172;
+	font-weight: bold;
 }
 
-.nav-secondary a:hover,
+.nav-secondary a:hover { /* Separated out by Colleen */
+	color: #626266;
+	text-decoration: none; 
+}
+
 .nav-secondary .current-menu-item > a {
-	color: #ffffff;
+	/* color: #ffffff; */
+	color: #CC9E61;
+	text-decoration: underline;
 }
 
 
@@ -1350,7 +1376,13 @@ Sidebars
 }
 
 .sidebar .enews-widget {
-	background-color: #333;
+	/* background-color: #333; */ /* Changed by Colleen */
+	background-color: #626266;
+}
+
+.sidebar .enews-widget .widget-title {
+	color: #020304;
+	font-weight: bold;
 }
 
 
@@ -1359,7 +1391,8 @@ Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #333;
+	/* background-color: #333; */
+	background-color: #626266;
 	color: #999;
 	clear: both;
 	padding: 40px 0 16px;
