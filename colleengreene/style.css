@@ -1086,8 +1086,8 @@ Site Navigation
 
 .nav-secondary a { /* Modified by Colleen */
 	/* color: #999999; */
-	/* color: #CC9E61; */
-	color: #938172;
+	/* color: #938172; */
+	color: #CC9E61;
 	font-weight: bold;
 }
 
@@ -1098,7 +1098,8 @@ Site Navigation
 
 .nav-secondary .current-menu-item > a {
 	/* color: #ffffff; */
-	color: #CC9E61;
+	/* color: #CC9E61; */
+	color: #938172;
 	text-decoration: underline;
 }
 
