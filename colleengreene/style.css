@@ -746,12 +746,9 @@ Plugins
 --------------------------------------------- */
 
 .enews-widget {
-	color: #999;
+	/* color: #999; */
+	color: #f5f5f5; /* Changed by Colleen */
 	background-color: #626266; */ Added by Colleen */
-}
-
-.enews-widget .widget-title {
-	color: #fff;
 }
 
 .enews-widget input {
@@ -764,8 +761,7 @@ Plugins
 }
 
 .enews-widget input[type="submit"] {
-	/* background-color: #600000; */
-	/* background-color: #472c23; */
+	/* background-color: #600000; */ /* Changed by Colleen */
 	background-color: #CC9E61;
 	color: #fff;
 	margin: 0;
