@@ -1197,6 +1197,17 @@ Content Area
 }
 
 
+/* Top wrap widget before content, added by Colleen */
+
+.topwrapwrapper {
+	font-size: 115%;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: #541F41;
+}
+
+
 /* Tip Box added by Colleen */
 .tip-box { background:#CC9E61; border:2px solid #626266; color: #020304; font-size:95%; position:relative; margin:2px 0px 10px 0px; overflow:hidden; padding: 1em; }
 .tip-box-heading { font-size:150%; color:#541F14; font-weight:bold; }
