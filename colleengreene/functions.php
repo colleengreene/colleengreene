@@ -48,7 +48,7 @@ function sp_share_buttons_above_post( $content = '' ) {
 }
 
 
-/* Add eNews Signup Box after Select Posts */
+/* Add eNews Signup Box before Select Posts */
 function enews_signup_box() {
 if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealogy', 'Hispanic genealogy'))) { ?>
 
