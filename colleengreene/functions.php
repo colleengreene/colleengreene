@@ -31,16 +31,6 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_before_header', 'genesis_do_subnav' );
 
-//* ***** Add Digital Heritage Solutions explanation after primary nav menu *****
-function explain_digital_heritage() {
-
-<div class="dhs-definition">Test</div>
-
-add_action( 'genesis_before_content', 'explain_digital_heritage', 1 );
-
-
-}
-
 
 //* Add Jetpack share buttons above post
 remove_filter( 'the_content', 'sharing_display', 19 );
@@ -80,7 +70,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2015 <a title="Colleen Greene" href="http://www.colleengreene.com/">Colleen Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="http://www.colleengreene.com/wp-admin">Admin</a></p>
+	<p>&copy; Copyright 2016 <a title="Colleen Greene" href="http://www.colleengreene.com/">Colleen Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="http://www.colleengreene.com/wp-admin">Admin</a></p>
 	<?php
 }
 
