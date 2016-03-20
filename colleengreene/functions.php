@@ -31,6 +31,17 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_before_header', 'genesis_do_subnav' );
 
+//* ***** Add Digital Heritage Solutions explanation after primary nav menu *****
+function explain_digital_heritage() {
+
+<div class="dhs-definition">Test</div>
+
+add_action( 'genesis_before_content', 'explain_digital_heritage', 1 );
+
+
+}
+
+
 //* Add Jetpack share buttons above post
 remove_filter( 'the_content', 'sharing_display', 19 );
 remove_filter( 'the_excerpt', 'sharing_display', 19 );
