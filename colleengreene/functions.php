@@ -130,5 +130,49 @@ function create_post_type_cg_class() { // must give each function a unique name
 }
 
 
+//* Remove Post Info, Post Meta from CPT
+//* Borrowed from https://www.engagewp.com/remove-custom-post-type-post-meta-genesis/
+add_action ( 'get_header', 'cg_cpt_remove_post_info_genesis' );
+function cg_cpt_remove_post_info_genesis() {
+	if ( 'post' !== get_post_type() ) {
+		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+	}
+}
+
+
+
+//* Create custom Format taxonomy 
+add_action( 'init', 'create_format_taxonomy' );
+function create_format_taxonomy() {
+$labels = array(
+	'name' => 'Formats',
+	'singular_name' => 'Format',
+	'search_items' => 'Search Formats',
+	'all_items' => 'All Formats',
+	'edit_item' => 'Edit Format',
+	'update_item' => 'Update Format',
+	'add_new_item' => 'Add New Format',
+	'new_item_name' => 'New Format Name',
+	'menu_name' => 'Formats',
+	'view_item' => 'View Format',
+	'popular_items' => 'Popular Formats',
+	'add_or_remove_items' => 'Add or remove formats',
+	'choose_from_most_used' => 'Choose from the most used formats',
+	'not_found' => 'No formats found'
+);
+register_taxonomy(
+	'format',
+	array('post','page', 'cg_class'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Format' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'format' ),
+		'labels' => $labels
+	)
+);
+}
+
 
 //* End changes by Colleen
