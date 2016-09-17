@@ -208,4 +208,37 @@ register_taxonomy(
 }
 
 
+//* Create custom Audience taxonomy 
+add_action( 'init', 'create_audience_taxonomy' );
+function create_audience_taxonomy() {
+$labels = array(
+	'name' => 'Audiences',
+	'singular_name' => 'Audience',
+	'search_items' => 'Search Audiences',
+	'all_items' => 'All Audiences',
+	'edit_item' => 'Edit Audience',
+	'update_item' => 'Update Audience',
+	'add_new_item' => 'Add New Audience',
+	'new_item_name' => 'New Audience Name',
+	'menu_name' => 'Audiences',
+	'view_item' => 'View Audience',
+	'popular_items' => 'Popular Audiences',
+	'add_or_remove_items' => 'Add or remove Audiences',
+	'choose_from_most_used' => 'Choose from the most used Audiences',
+	'not_found' => 'No Audiences found'
+);
+register_taxonomy(
+	'audience',
+	array('post','page', 'cg_class'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Audience' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'audience' ),
+		'labels' => $labels
+	)
+);
+}
+
+
 //* End changes by Colleen
