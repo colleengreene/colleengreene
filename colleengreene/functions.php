@@ -84,7 +84,7 @@ Interested in Hispanic genealogy and history?<br />
 
 <?php }
 }
-add_action('genesis_entry_footer', 'enews_signup_box', 0);
+add_action('genesis_entry_content', 'enews_signup_box', 20);
 /* End eNews Signup Box after Select Posts */
 
 
