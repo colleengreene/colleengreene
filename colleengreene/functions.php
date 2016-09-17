@@ -98,4 +98,36 @@ function sp_custom_footer() {
 }
 
 
+
+//* Create custom Classes post types
+add_action( 'init', 'create_post_type_cg_class' );
+function create_post_type_cg_class() { // must give each function a unique name
+
+// Class custom post type
+
+  register_post_type( 'cg_class',
+    array(
+      'labels' => array(
+        'name' => __( 'Classes' ),
+        'singular_name' => __( 'Class' ),
+	 'search_items' => _( 'Search Classes' ),
+	 'all_items' => _( 'All Classes' ),
+	 'edit_item' => _( 'Edit Class' ),
+	 'update_item' => _( 'Update Class' ),
+	 'add_new_item' => _( 'Add New Class' ),
+	 'new_item_name' => _( 'New Class Name' ),
+	 'menu_name' => _( 'Classes' ),
+      ),
+      'public' => true,
+      'hierarchical' => true,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
+      'taxonomies' => array( 'category', 'post_tag'),
+      'has_archive' => true,
+	'query_var' => true,
+	'rewrite' => array( 'slug' => 'classes' ),
+    )
+  );
+}
+
+
 //* End changes by Colleen
