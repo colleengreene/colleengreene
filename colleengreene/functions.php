@@ -108,7 +108,7 @@ function create_post_type_cg_class() { // must give each function a unique name
   register_post_type( 'cg_class',
     array(
       'labels' => array(
-        'name' => __( 'Classes' ),
+        'name' => __( 'My Classes' ),
         'singular_name' => __( 'Class' ),
 	 'search_items' => _( 'Search Classes' ),
 	 'all_items' => _( 'All Classes' ),
@@ -116,7 +116,7 @@ function create_post_type_cg_class() { // must give each function a unique name
 	 'update_item' => _( 'Update Class' ),
 	 'add_new_item' => _( 'Add New Class' ),
 	 'new_item_name' => _( 'New Class Name' ),
-	 'menu_name' => _( 'Classes' ),
+	 'menu_name' => _( 'My Classes' ),
       ),
       'public' => true,
       'hierarchical' => true,
@@ -128,6 +128,7 @@ function create_post_type_cg_class() { // must give each function a unique name
     )
   );
 }
+
 
 
 //* End changes by Colleen
