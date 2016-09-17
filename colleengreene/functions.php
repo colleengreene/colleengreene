@@ -175,4 +175,37 @@ register_taxonomy(
 }
 
 
+//* Create custom Level taxonomy 
+add_action( 'init', 'create_level_taxonomy' );
+function create_level_taxonomy() {
+$labels = array(
+	'name' => 'Levels',
+	'singular_name' => 'Level',
+	'search_items' => 'Search Levels',
+	'all_items' => 'All Levels',
+	'edit_item' => 'Edit Level',
+	'update_item' => 'Update Level',
+	'add_new_item' => 'Add New Level',
+	'new_item_name' => 'New Level Name',
+	'menu_name' => 'Levels',
+	'view_item' => 'View Level',
+	'popular_items' => 'Popular Levelss',
+	'add_or_remove_items' => 'Add or remove levels',
+	'choose_from_most_used' => 'Choose from the most used Levels',
+	'not_found' => 'No Levels found'
+);
+register_taxonomy(
+	'level',
+	array('post','page', 'cg_class'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Level' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'level' ),
+		'labels' => $labels
+	)
+);
+}
+
+
 //* End changes by Colleen
