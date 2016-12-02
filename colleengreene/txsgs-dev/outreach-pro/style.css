@@ -1028,7 +1028,8 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #589b37;
+	/* background-color: #589b37; */
+	background-color: #010740;
 	color: #fff;
 	min-height: 110px;
 }
