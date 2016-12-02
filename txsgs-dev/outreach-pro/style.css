@@ -1028,8 +1028,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	/* background-color: #589b37; */
-	background-color: #191938 !important; /* Changed by Colleen */
+	background-color: #589b37;
 	color: #fff;
 	min-height: 110px;
 }
@@ -1675,13 +1674,25 @@ Site Footer
 
 
 
-/* *** Styles by Colleen *** */
+/* *** ********************** Styles by Colleen ******************* *** */
 
 
 /* General */
 
 .site-header {
 	background-color: #191938 !important;
+}
+
+.nav-primary {
+background-color: #757587 !important;
+}
+
+.nav-secondary {
+background-color: #000022 !important;
+}
+
+.nav-secondary .wrap {
+margin-bottom: 0px !important;
 }
 
 body {
