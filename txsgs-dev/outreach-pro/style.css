@@ -1673,6 +1673,39 @@ Site Footer
 	margin-bottom: 0;
 }
 
+
+
+/* *** Styles by Colleen *** */
+
+
+/* General */
+
+.site-header {
+	background-color: #191938 !important;
+}
+
+body {
+background-color: #ffffff !important;
+}
+
+
+/* CSS Buttons */
+
+a.btn-txsgs-red-outline {
+    border: 1px solid #c10000;
+    background: #fff;
+    color: #c10000 !important;
+    font-size: 18px;
+    text-shadow: none;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
 /*
 Theme Colors
 ---------------------------------------------------------------------------------------------------- */
