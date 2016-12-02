@@ -1029,7 +1029,7 @@ Site Header
 
 .site-header {
 	/* background-color: #589b37; */
-	background-color: #010740;
+	background-color: #191938 !important; /* Changed by Colleen */
 	color: #fff;
 	min-height: 110px;
 }
