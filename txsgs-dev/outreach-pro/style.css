@@ -1699,6 +1699,24 @@ body {
 background-color: #ffffff !important;
 }
 
+/* Email List Sign Up Block Styles */
+/* Styles the block box */
+.email-signup {
+	width: 100%;
+	border: 2px solid #151B54;
+	position: relative;
+	margin: 2px 0;
+	overflow: hidden;
+	padding: 1em;
+	margin: 50px 10px 10px 10px;
+}
+
+.email-signup-intro {
+	color: #151B54;
+	font-weight: bold;
+	font-size: 120%;
+	margin-bottom: 30px;
+}
 
 /* CSS Buttons */
 
