@@ -1795,6 +1795,41 @@ a.btn-txsgs-red-outline {
     padding: 10px 20px;
 }
 
+/* Styles for Conference Program Schedules */
+.event-links {
+	text-align: center;
+}
+
+.event-type {
+	text-align: center;
+	padding: 10px;
+}
+
+.event-times {
+	float: left;
+	width: 17%;
+}
+
+.event-sessions {
+	margin-left: 20%;
+}
+
+.event-workshops {
+	margin-left: 20%;
+}
+
+.event-details {
+	float: left;
+}
+
+th.event-type {
+	text-align: center;
+}
+
+td.event-type {
+	text-align: center;
+}
+
 
 /*
 Theme Colors
