@@ -1708,6 +1708,11 @@ body {
 background-color: #f5f5f5 !important;
 }
 
+/* Allows selected H2 headings to wrap around an image */
+h2.wraparound {
+	clear: none;
+}
+
 /* Email List Sign Up Block Styles */
 /* Styles the block box */
 .email-signup {
