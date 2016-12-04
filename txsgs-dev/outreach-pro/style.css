@@ -1731,6 +1731,22 @@ h2.wraparound {
 	font-size: 120%;
 }
 
+/* Styles the conference news box */
+.conference-news {
+	background: #f5f5f5;
+	border: 1px solid #DDD;
+	position: relative;
+	margin: 2px 0 10px;
+	overflow: hidden;
+	padding: 1em;
+}
+
+.box-intro {
+	color: #990012;
+	font-weight: bold;
+	font-size: 120%;
+}
+
 /* CSS Buttons */
 
 a.btn-txsgs-red-outline {
@@ -1741,11 +1757,6 @@ a.btn-txsgs-red-outline {
     text-shadow: none;
     padding: 10px 20px;
 }
-
-
-
-
-
 
 
 /*
