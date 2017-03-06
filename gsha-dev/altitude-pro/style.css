@@ -2306,3 +2306,15 @@ p.form-submit,
 	}
 
 }
+
+
+/* GSHA Changes by Colleen
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background-color: #E18822 !important;
+}
+
+.footer-widgets {
+	background-color: #772300 !important;
+}
