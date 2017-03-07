@@ -1926,6 +1926,14 @@ p.form-submit,
 	background-color: #E18822 !important;
 }
 
+.front-page-2 {
+	background-color: #72581F !important;
+}
+
+.front-page-3 .featured-content .entry {
+	background-color: #72581F !important;
+}
+
 
 #content h2.wraparound h3.wraparound {
     clear: none;
