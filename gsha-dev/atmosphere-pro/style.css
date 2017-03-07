@@ -1918,3 +1918,15 @@ p.form-submit,
 	}
 
 }
+
+/* Styles Added by Colleen
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background-color: #E18822 !important;
+}
+
+
+#content h2.wraparound h3.wraparound {
+    clear: none;
+}
