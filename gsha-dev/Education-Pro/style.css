@@ -2642,3 +2642,12 @@ Media Queries
 	}
 
 }
+
+
+/*
+Items added by Colleen
+---------------------------------------------------------------------------------------------------- */
+
+#tribe-events .tribe-events-button {
+	background-color: #910D0D !important;
+}
