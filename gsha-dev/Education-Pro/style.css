@@ -180,7 +180,8 @@ textarea:focus,
 }
 
 a {
-	color: #78a7c8;
+	/* color: #78a7c8; */
+	color: #8D9981; */ Changed by Colleen */
 	text-decoration: none;
 }
 
@@ -403,7 +404,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: #78a7c8;
+	/* background-color: #78a7c8; */
+	background-color: #8D9981; */ Changed by Colleen */
 	border-radius: 3px;
 	border: none;
 	color: #fff;
@@ -985,7 +987,8 @@ Plugins
 }
 
 .widget-area .widget.enews-widget {
-	background-color: #78a7c8;
+	/* background-color: #78a7c8; */
+	background-color: #8D9981; */ Changed by Colleen */
 	border: none;
 	padding: 40px;
 }
@@ -1076,7 +1079,8 @@ html > body.education-pro-home .slide-excerpt-border {
 }
 
 .education-pro-home .slide-excerpt h2 a {
-	color: #78a7c8;
+	/* color: #78a7c8; */
+	color: #8D9981; */ Changed by Colleen */
 }
 
 .education-pro-home #genesis-responsive-slider .slide-excerpt h2 a:hover {
@@ -1211,7 +1215,8 @@ Site Navigation
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu li a:hover,
 .genesis-nav-menu li.current-menu-item > a {
-	background-color: #78a7c8;
+	/* background-color: #78a7c8; */
+	background-color: #8D9981; */ Changed by Colleen */
 	color: #fff;
 }
 
@@ -1229,7 +1234,8 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #78a7c8;
+	/* background-color: #78a7c8; */
+	background-color: #8D9981; */ Changed by Colleen */
 	border: 1px solid rgba(0, 0, 0, 0.05);
 	border-top: none;
 	box-shadow: 3px 3px rgba(70, 70, 70, 0.2);
@@ -1466,7 +1472,8 @@ Content Area
 }
 
 .home-top .widget_text {
-	color: #78a7c8;
+	/* color: #78a7c8; */
+	color: #8D9981; */ Changed by Colleen */
 	font-size: 48px;
 	line-height: 1.1;
 	text-align: center;
@@ -1488,7 +1495,8 @@ Content Area
 }
 
 .home-middle .entry-title a {
-	color: #78a7c8;
+	/* color: #78a7c8; */
+	color: #8D9981; */ Changed by Colleen */
 }
 
 .home-middle .widget {
@@ -1509,7 +1517,8 @@ Content Area
 }
 
 .home-bottom {
-	background-color: #78a7c8;
+	/* background-color: #78a7c8; */
+	background-color: #8D9981; */ Changed by Colleen */
 	box-shadow: inset 0 5px rgba(0, 0, 0, 0.05);
 	color: #fff;
 	padding: 60px 0;
@@ -1792,7 +1801,8 @@ Footer Widgets
 
 .footer-widgets a.button,
 .footer-widgets .wrap a:hover {
-	color: #78a7c8;
+	/* color: #78a7c8; */
+	color: #8D9981; */ Changed by Colleen */
 }
 
 .footer-widgets p:last-child {
@@ -1847,7 +1857,8 @@ Site Footer
 
 .site-footer a.button,
 .site-footer .wrap a:hover {
-	color: #78a7c8;
+	/* color: #78a7c8; */
+	color: #8D9981; */ Changed by Colleen */
 }
 
 .site-footer p {
