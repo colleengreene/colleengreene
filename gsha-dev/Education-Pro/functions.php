@@ -134,3 +134,15 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home - Bottom', 'education' ),
 	'description' => __( 'This is the bottom section of the Home page.', 'education' ),
 ) );
+
+
+
+//* Begin changes made by Colleen.
+
+
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright] <a href="http://mydomain.com">Genealogical Society of Hispanic America</a>';
+	return $creds;
+}
