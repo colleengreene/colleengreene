@@ -140,6 +140,10 @@ genesis_register_sidebar( array(
 //* Begin changes made by Colleen.
 
 
+//* Reposition the primary navigation menu back to below the header
+remove_action( 'genesis_before_header', 'genesis_do_nav' );
+add_action( 'genesis_after_header', 'genesis_do_nav' );
+
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
