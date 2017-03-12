@@ -1345,8 +1345,10 @@ Site Navigation
 
 .nav-primary {
 	/* background-color: #34678a; */
-	background-color: #606958; /* Changed by colleen */
+	/* background-color: #606958; */ /* Changed by colleen */
+	background-color: #2F332B; /* Changed by Colleen */
 	color: #fff;
+	border-top: 3px solid #606958;
 }
 
 .nav-primary .genesis-nav-menu {
