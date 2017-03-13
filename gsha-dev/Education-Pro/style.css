@@ -1110,7 +1110,8 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	/* background-color: #fff; */
+	background-color: #910D0D; */ Changed by Colleen */
 	/* border-top: 3px solid #e44a3c; */
 	/* border-top: 3px solid #910D0D; */ */ Changed by Colleen */
 	box-shadow: 0 3px rgba(70, 70, 70, 0.05);
