@@ -542,7 +542,8 @@ Structure and Layout
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 1140px;
+	/* max-width: 1140px; */
+	max-width: 1164px; /* Changed by Colleen */
 }
 
 .site-inner {
@@ -2660,7 +2661,6 @@ Items added by Colleen
 /* css for your larger logo & navigation */
 @media only screen and (min-width: 800px) {
 	.title-area {
-		width: 100%;
+		width: 95%;
 	}
-
 }
