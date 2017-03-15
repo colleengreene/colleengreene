@@ -542,7 +542,8 @@ Structure and Layout
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 1140px;
+	/* max-width: 1140px; */
+	max-width: 1164px; /* Changed by Colleen */
 }
 
 .site-inner {
@@ -1110,9 +1111,10 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	/* background-color: #fff; */
+	background-color: #910D0D; */ Changed by Colleen */
 	/* border-top: 3px solid #e44a3c; */
-	border-top: 3px solid #910D0D; */ Changed by Colleen */
+	/* border-top: 3px solid #910D0D; */ */ Changed by Colleen */
 	box-shadow: 0 3px rgba(70, 70, 70, 0.05);
 	min-height: 80px;
 }
@@ -1136,12 +1138,14 @@ Site Header
 	padding: 20px;
 	position: absolute;
 	text-align: center;
-	width: 300px;
+	width: 100%; /* Changed by Colleen */
 }
 
 .header-image .title-area {
-	background-color: #fff !important;
+	/* background-color: #fff !important; */
+	background-color: #910D0D !important; /* Changed by Colleen */
 	padding: 0;
+	width: 100%; /* Added by Colleen */
 }
 
 .site-title {
@@ -1240,7 +1244,8 @@ Site Navigation
 	border-top: none;
 	box-shadow: 3px 3px rgba(70, 70, 70, 0.2);
 	color: #fff;
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: 16px; /* Changed by Colleen */
 	padding: 14px 16px;
 	position: relative;
 	width: 200px;
@@ -1345,12 +1350,15 @@ Site Navigation
 
 .nav-primary {
 	/* background-color: #34678a; */
-	background-color: #606958; /* Changed by colleen */
+	/* background-color: #606958; */ /* Changed by colleen */
+	background-color: #2F332B; /* Changed by Colleen */
 	color: #fff;
+	border-top: 3px solid #606958;
 }
 
 .nav-primary .genesis-nav-menu {
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: 16px; /* Changed by Colleen */
 }
 
 .education-pro-home .nav-primary .genesis-nav-menu {
@@ -2309,6 +2317,8 @@ Media Queries
 	}
 
 	.header-image .site-title a {
+		background: url(/wp-content/uploads/2017/03/gsha-web-header-1024.png) no-repeat left; /* Added by Colleen */
+		background-size: 1024px 80px; /* Added by Colleen */
 		background-position: center top !important;
 		background-size: contain !important;
 	}
@@ -2410,6 +2420,11 @@ Media Queries
 	.wrap {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+
+	.title-area { /* Added by Colleen */
+		background: url(/wp-content/uploads/2017/03/gsha-web-header-768.png) no-repeat left;
+		background-size: 768px 80px;
 	}
 	
 	.education-pro-landing .site-inner,
@@ -2621,9 +2636,11 @@ Media Queries
 	.footer-widgets-5,
 	.home-bottom .enews-widget input[type="email"],
 	.home-bottom .enews-widget input[type="submit"],
-	.title-area {
-		width: 100%;
-	}
+	/*.title-area {
+		/* width: 100%;*/ 
+		background: url(/wp-content/uploads/2017/03/gsha-web-header-480.png) no-repeat left; /* Added by Colleen */
+		background-size: 480px 160px; /* Added by Colleen */
+	} 
 	
 	.footer-widgets-2,
 	.footer-widgets-3,
@@ -2637,9 +2654,9 @@ Media Queries
 		text-align: center;
 	}
 	
-	.title-area {
+	/* .title-area {
 		max-width: 300px;
-	}
+	}*/
 
 }
 
@@ -2653,9 +2670,12 @@ Items added by Colleen
 }
 
 /* css for your larger logo & navigation */
+/*
 @media only screen and (min-width: 800px) {
 	.title-area {
-		width: 100%;
+		width: 95%;
 	}
-
 }
+*/
+
+
