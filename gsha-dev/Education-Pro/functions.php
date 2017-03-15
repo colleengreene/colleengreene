@@ -140,6 +140,41 @@ genesis_register_sidebar( array(
 //* Begin changes made by Colleen.
 
 
+//* Remove the site description
+remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+
+
+//* Reposition the primary navigation menu back to below the header
+remove_action( 'genesis_before_header', 'genesis_do_nav' );
+add_action( 'genesis_after_header', 'genesis_do_nav' );
+
+
+add_filter( 'wp_nav_menu_items', 'theme_menu_extras', 10, 2 );
+/**
+ * Filter menu items, appending either a search form or today's date.
+ *
+ * @param string   $menu HTML string of list items.
+ * @param stdClass $args Menu arguments.
+ *
+ * @return string Amended HTML string of list items.
+ */
+function theme_menu_extras( $menu, $args ) {
+
+	//* Change 'primary' to 'secondary' to add extras to the secondary navigation menu
+	if ( 'primary' !== $args->theme_location )
+		return $menu;
+
+	//* Uncomment this block to add a search form to the navigation menu
+	ob_start();
+	get_search_form();
+	$search = ob_get_clean();
+	$menu  .= '<li class="right search">' . $search . '</li>';
+
+	return $menu;
+
+}
+
+
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
