@@ -1132,13 +1132,15 @@ Site Header
 .title-area {
 	/* background-color: #e44a3c; */
 	background-color: #910D0D; /* Changed by Colleen */
+	background-position: center center; /* Added by Colleen */
 	box-shadow: 0 3px rgba(70, 70, 70, 0.1);
 	color: #fff;
 	margin: 0 auto;
 	padding: 20px;
 	position: absolute;
 	text-align: center;
-	width: 300px;
+	/* width: 300px; */
+	width: 100%; /* Changed by Colleen */
 }
 
 .header-image .title-area {
@@ -2312,6 +2314,7 @@ Media Queries
 	.title-area {
 		position: relative;
 		margin-bottom: 6px;
+		background-position: center center; /* Added by Colleen */
 	}
 
 	.header-image .site-title a {
@@ -2629,6 +2632,7 @@ Media Queries
 	.home-bottom .enews-widget input[type="submit"],
 	.title-area {
 		width: 100%;
+		background-position: center center; /* Added by Colleen */
 	}
 	
 	.footer-widgets-2,
@@ -2645,6 +2649,7 @@ Media Queries
 	
 	.title-area {
 		max-width: 300px;
+		background-position: center center; /* Added by Colleen */
 	}
 
 }
@@ -2661,7 +2666,8 @@ Items added by Colleen
 /* css for your larger logo & navigation */
 @media only screen and (min-width: 800px) {
 	.title-area {
-		width: 95%;
+		width: 70%;
+		background-position: center center;
 	}
 }
 
