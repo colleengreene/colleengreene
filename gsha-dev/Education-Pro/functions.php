@@ -180,6 +180,6 @@ function theme_menu_extras( $menu, $args ) {
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] <a href="http://mydomain.com">Genealogical Society of Hispanic America</a>';
+	$creds = '[footer_copyright] <a href="http://www.gsha.net">Genealogical Society of Hispanic America</a>';
 	return $creds;
 }
