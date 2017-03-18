@@ -2720,10 +2720,8 @@ td.event-type {
 
 /* Adding a button that displays in the opposite colors from the theme default */
 .red-button {
-	/* background-color: #78a7c8; */
-	background-color: #910D0D; */ Changed by Colleen */
-	border-radius: 3px;
-	border: none;
+	background-color: #910D0D;
+	border-radius: 25px;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
@@ -2735,8 +2733,8 @@ td.event-type {
 }
 
 .red-button:hover {
-	/* background-color: #e44a3c; */
-	background-color: #8D9981; /* Changed by Colleen */
+	border-radius: 25px;
+	background-color: #8D9981;
 	color: #fff;
 }
 
