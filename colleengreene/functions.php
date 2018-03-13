@@ -185,25 +185,6 @@ function cg_cpt_remove_post_info_genesis() {
         return $query;
     }
 
-//* Adds a Title to My CPT Archives
-/**
-* @author Brad Dalton - WP Sites
-*
-* @learn more http://wpsites.net/web-design/title-custom-post-type-archive/
-*/
-
-function add_guide_page_title() {
-if ( is_post_type_archive( 'cg_guide' ) )
-    echo '<h1 class="entry-title">My Research & Instruction Guides</h1>';
-};
-add_action('genesis_before_content', 'add_guide_page_title');
-
-function add_class_page_title() {
-if ( is_post_type_archive( 'cg_class' ) )
-    echo '<h1 class="entry-title">My Teaching & Speaking Class Catalog</h1>';
-};
-add_action('genesis_before_content', 'add_class_page_title');
-
 
 // function and action to order classes alphabetically
 
