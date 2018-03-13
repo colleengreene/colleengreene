@@ -205,4 +205,28 @@ if ( is_post_type_archive( 'cg_class' ) )
 add_action('genesis_before_content', 'add_class_page_title');
 
 
+// function and action to order classes alphabetically
+
+function alpha_order_class( $query ) {
+    if ( $query->is_post_type_archive('cg_class') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+
+add_action( 'pre_get_posts', 'alpha_order_class' );
+
+
+// function and action to order classes alphabetically
+
+function alpha_order_guide( $query ) {
+    if ( $query->is_post_type_archive('cg_guide') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+
+add_action( 'pre_get_posts', 'alpha_order_guide' );
+
+
 //* End changes by Colleen
