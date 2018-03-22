@@ -131,6 +131,44 @@ function create_post_type_cg_class() { // must give each function a unique name
 
 
 
+//* Create custom Criteria taxonomy 
+add_action( 'init', 'create_criteria_taxonomy' );
+function create_criteria_taxonomy() {
+$labels = array(
+	'name' => 'Criteria',
+	'singular_name' => 'Criteria',
+	'search_items' => 'Search Criteria',
+	'all_items' => 'All Criteria',
+	'edit_item' => 'Edit Criteria',
+	'update_item' => 'Update Criteria',
+	'add_new_item' => 'Add New Criteria',
+	'new_item_name' => 'New Criteria Name',
+	'menu_name' => 'Criteria',
+	'view_item' => 'View Criteria',
+	'popular_items' => 'Popular Criteria',
+	'add_or_remove_items' => 'Add or remove criteria',
+	'choose_from_most_used' => 'Choose from the most used criteria',
+	'not_found' => 'No criteria found'
+);
+register_taxonomy(
+	'criteria',
+	array('post','cg_class'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Criteria' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'criteria' ),
+		'labels' => $labels
+	)
+);
+}
+
+
+
+
+
+
+
 //* Create custom Guides post types
 add_action( 'init', 'create_post_type_cg_guide' );
 function create_post_type_cg_guide() { // must give each function a unique name
