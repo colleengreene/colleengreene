@@ -99,7 +99,7 @@ function sp_custom_footer() {
 
 
 
-//* Create custom Classes post types
+//* Create custom Classes post type
 add_action( 'init', 'create_post_type_cg_class' );
 function create_post_type_cg_class() { // must give each function a unique name
 
@@ -128,6 +128,72 @@ function create_post_type_cg_class() { // must give each function a unique name
     )
   );
 }
+
+
+
+
+//* Create custom Lectures post type
+add_action( 'init', 'create_post_type_cg_lecture' );
+function create_post_type_cg_lecture() { // must give each function a unique name
+
+// Lecture custom post type
+
+  register_post_type( 'cg_lecture',
+    array(
+      'labels' => array(
+        'name' => __( 'My Lectures' ),
+        'singular_name' => __( 'Lecture' ),
+	 'search_items' => _( 'Search Lectures' ),
+	 'all_items' => _( 'All Lectures' ),
+	 'edit_item' => _( 'Edit Lecture' ),
+	 'update_item' => _( 'Update Lecture' ),
+	 'add_new_item' => _( 'Add New Lecture' ),
+	 'new_item_name' => _( 'New Lecture Name' ),
+	 'menu_name' => _( 'My Lectures' ),
+      ),
+      'public' => true,
+      'hierarchical' => true,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
+      'taxonomies' => array( 'category', 'post_tag'),
+      'has_archive' => true,
+	'query_var' => true,
+	'rewrite' => array( 'slug' => 'lectures' ),
+    )
+  );
+}
+
+
+
+//* Create custom Workshops post type
+add_action( 'init', 'create_post_type_cg_workshop' );
+function create_post_type_cg_workshop() { // must give each function a unique name
+
+// Workshop custom post type
+
+  register_post_type( 'cg_workshop',
+    array(
+      'labels' => array(
+        'name' => __( 'My Workshops' ),
+        'singular_name' => __( 'Workshop' ),
+	 'search_items' => _( 'Search Workshops' ),
+	 'all_items' => _( 'All Workshops' ),
+	 'edit_item' => _( 'Edit Workshop' ),
+	 'update_item' => _( 'Update Workshop' ),
+	 'add_new_item' => _( 'Add New Workshop' ),
+	 'new_item_name' => _( 'New Workshop Name' ),
+	 'menu_name' => _( 'My Workshops' ),
+      ),
+      'public' => true,
+      'hierarchical' => true,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
+      'taxonomies' => array( 'category', 'post_tag'),
+      'has_archive' => true,
+	'query_var' => true,
+	'rewrite' => array( 'slug' => 'workshops' ),
+    )
+  );
+}
+
 
 
 
