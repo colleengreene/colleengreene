@@ -354,8 +354,6 @@ register_taxonomy(
 }
 
 
-
-
 //* Create custom Guides post types
 add_action( 'init', 'create_post_type_cg_guide' );
 function create_post_type_cg_guide() { // must give each function a unique name
