@@ -191,6 +191,39 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 }
 
 
+//* Create custom Genealogy Experience Level taxonomy 
+add_action( 'init', 'create_criteria_genealogy_level' );
+function create_criteria_genealogy_level() {
+$labels = array(
+	'name' => 'Genealogy Level',
+	'singular_name' => 'Genealogy Level',
+	'search_items' => 'Search Genealogy Levels',
+	'all_items' => 'All Genealogy Levels',
+	'edit_item' => 'Edit Genealogy Level',
+	'update_item' => 'Update Genealogy Level',
+	'add_new_item' => 'Add New Genealogy Level',
+	'new_item_name' => 'New Genealogy Level',
+	'menu_name' => 'Genealogy Level',
+	'view_item' => 'View Genealogy Levels',
+	'popular_items' => 'Popular Genealogy Levels',
+	'add_or_remove_items' => 'Add or remove Genealogy Levels',
+	'choose_from_most_used' => 'Choose from the most used Levels',
+	'not_found' => 'No Genealogy Levels found'
+);
+register_taxonomy(
+	'genealogy_level',
+	array('cg_class', 'cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Genealogy Level' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'genealogy-level' ),
+		'labels' => $labels
+	)
+);
+}
+
+
 //* Create custom Criteria taxonomy 
 add_action( 'init', 'create_criteria_taxonomy' );
 function create_criteria_taxonomy() {
@@ -222,6 +255,8 @@ register_taxonomy(
 	)
 );
 }
+
+
 
 
 //* Create custom Guides post types
