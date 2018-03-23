@@ -278,7 +278,7 @@ $labels = array(
 );
 register_taxonomy(
 	'criteria',
-	array('cg_class', 'cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array('cg_class'), //An array of post types that share this taxonomy
 	array(
 		'label' => __( 'Criteria' ),
 		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
