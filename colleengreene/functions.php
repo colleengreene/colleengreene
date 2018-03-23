@@ -107,7 +107,7 @@ function create_post_type_cg_class() { // must give each function a unique name
   register_post_type( 'cg_class',
     array(
       'labels' => array(
-        'name' => __( 'My Classes' ),
+        'name' => __( 'Classes' ),
         'singular_name' => __( 'Class' ),
 	 'search_items' => _( 'Search Classes' ),
 	 'all_items' => _( 'All Classes' ),
@@ -115,7 +115,7 @@ function create_post_type_cg_class() { // must give each function a unique name
 	 'update_item' => _( 'Update Class' ),
 	 'add_new_item' => _( 'Add New Class' ),
 	 'new_item_name' => _( 'New Class Name' ),
-	 'menu_name' => _( 'My Classes' ),
+	 'menu_name' => _( 'Classes' ),
       ),
       'public' => true,
       'hierarchical' => true,
@@ -169,7 +169,7 @@ function create_post_type_cg_workshop() { // must give each function a unique na
   register_post_type( 'cg_workshop',
     array(
       'labels' => array(
-        'name' => __( 'My Workshops' ),
+        'name' => __( 'Workshops' ),
         'singular_name' => __( 'Workshop' ),
 	 'search_items' => _( 'Search Workshops' ),
 	 'all_items' => _( 'All Workshops' ),
@@ -177,7 +177,7 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 	 'update_item' => _( 'Update Workshop' ),
 	 'add_new_item' => _( 'Add New Workshop' ),
 	 'new_item_name' => _( 'New Workshop Name' ),
-	 'menu_name' => _( 'My Workshops' ),
+	 'menu_name' => _( 'Workshops' ),
       ),
       'public' => true,
       'hierarchical' => true,
@@ -233,7 +233,7 @@ function create_post_type_cg_guide() { // must give each function a unique name
   register_post_type( 'cg_guide',
     array(
       'labels' => array(
-        'name' => __( 'My Guides' ),
+        'name' => __( 'Guides' ),
         'singular_name' => __( 'Guide' ),
 	 'search_items' => _( 'Search Guides' ),
 	 'all_items' => _( 'All Guides' ),
@@ -241,7 +241,7 @@ function create_post_type_cg_guide() { // must give each function a unique name
 	 'update_item' => _( 'Update Guide' ),
 	 'add_new_item' => _( 'Add New Guide' ),
 	 'new_item_name' => _( 'New Guide Name' ),
-	 'menu_name' => _( 'My Guides' ),
+	 'menu_name' => _( 'Guides' ),
       ),
       'public' => true,
       'hierarchical' => true,
