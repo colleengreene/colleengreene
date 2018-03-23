@@ -190,8 +190,8 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 
 
 //* Create custom Genealogy Experience Level taxonomy 
-add_action( 'init', 'create_genealogy_level' );
-function create_genealogy_level() {
+add_action( 'init', 'create_genealogy_level_taxonomy' );
+function create_genealogy_level_taxonomy() {
 $labels = array(
 	'name' => 'Genealogy Level',
 	'singular_name' => 'Genealogy Level',
@@ -223,8 +223,8 @@ register_taxonomy(
 
 
 //* Create custom Subject Experience Level taxonomy 
-add_action( 'init', 'create_subject_level' );
-function create_subject_level() {
+add_action( 'init', 'create_subject_level_taxonomy' );
+function create_subject_level_taxonomy() {
 $labels = array(
 	'name' => 'Subject Level',
 	'singular_name' => 'Subject Level',
@@ -249,6 +249,39 @@ register_taxonomy(
 		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
 		'query_var' => true,
 		'rewrite' => array( 'slug' => 'subject-level' ),
+		'labels' => $labels
+	)
+);
+}
+
+
+//* Create custom Audience taxonomy 
+add_action( 'init', 'create_audience_taxonomy' );
+function create_audience_taxonomy() {
+$labels = array(
+	'name' => 'Audience',
+	'singular_name' => 'Audience',
+	'search_items' => 'Search Audience',
+	'all_items' => 'All Audiences',
+	'edit_item' => 'Edit Audience',
+	'update_item' => 'Update Audience',
+	'add_new_item' => 'Add New Audience',
+	'new_item_name' => 'New Audience Name',
+	'menu_name' => 'Audience',
+	'view_item' => 'View Audience',
+	'popular_items' => 'Popular Audiences',
+	'add_or_remove_items' => 'Add or remove audience',
+	'choose_from_most_used' => 'Choose from the most used audiences',
+	'not_found' => 'No audiences found'
+);
+register_taxonomy(
+	'audience',
+	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Audience' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'audience' ),
 		'labels' => $labels
 	)
 );
