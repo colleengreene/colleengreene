@@ -98,7 +98,6 @@ function sp_custom_footer() {
 }
 
 
-
 //* Create custom Classes post type
 add_action( 'init', 'create_post_type_cg_class' );
 function create_post_type_cg_class() { // must give each function a unique name
@@ -130,8 +129,6 @@ function create_post_type_cg_class() { // must give each function a unique name
 }
 
 
-
-
 //* Create custom Lectures post type
 add_action( 'init', 'create_post_type_cg_lecture' );
 function create_post_type_cg_lecture() { // must give each function a unique name
@@ -141,7 +138,7 @@ function create_post_type_cg_lecture() { // must give each function a unique nam
   register_post_type( 'cg_lecture',
     array(
       'labels' => array(
-        'name' => __( 'My Lectures' ),
+        'name' => __( 'Lectures' ),
         'singular_name' => __( 'Lecture' ),
 	 'search_items' => _( 'Search Lectures' ),
 	 'all_items' => _( 'All Lectures' ),
@@ -149,7 +146,7 @@ function create_post_type_cg_lecture() { // must give each function a unique nam
 	 'update_item' => _( 'Update Lecture' ),
 	 'add_new_item' => _( 'Add New Lecture' ),
 	 'new_item_name' => _( 'New Lecture Name' ),
-	 'menu_name' => _( 'My Lectures' ),
+	 'menu_name' => _( 'Lectures' ),
       ),
       'public' => true,
       'hierarchical' => true,
@@ -161,7 +158,6 @@ function create_post_type_cg_lecture() { // must give each function a unique nam
     )
   );
 }
-
 
 
 //* Create custom Workshops post type
@@ -195,8 +191,6 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 }
 
 
-
-
 //* Create custom Criteria taxonomy 
 add_action( 'init', 'create_criteria_taxonomy' );
 function create_criteria_taxonomy() {
@@ -228,11 +222,6 @@ register_taxonomy(
 	)
 );
 }
-
-
-
-
-
 
 
 //* Create custom Guides post types
