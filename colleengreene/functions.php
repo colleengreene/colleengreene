@@ -192,8 +192,8 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 
 
 //* Create custom Genealogy Experience Level taxonomy 
-add_action( 'init', 'create_criteria_genealogy_level' );
-function create_criteria_genealogy_level() {
+add_action( 'init', 'create_genealogy_level' );
+function create_genealogy_level() {
 $labels = array(
 	'name' => 'Genealogy Level',
 	'singular_name' => 'Genealogy Level',
@@ -212,7 +212,7 @@ $labels = array(
 );
 register_taxonomy(
 	'genealogy_level',
-	array('cg_class', 'cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
 	array(
 		'label' => __( 'Genealogy Level' ),
 		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
@@ -245,7 +245,7 @@ $labels = array(
 );
 register_taxonomy(
 	'subject_level',
-	array('cg_class', 'cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
 	array(
 		'label' => __( 'Subject Level' ),
 		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
