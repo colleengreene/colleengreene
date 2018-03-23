@@ -224,6 +224,39 @@ register_taxonomy(
 }
 
 
+//* Create custom Subject Experience Level taxonomy 
+add_action( 'init', 'create_subject_level' );
+function create_subject_level() {
+$labels = array(
+	'name' => 'Subject Level',
+	'singular_name' => 'Subject Level',
+	'search_items' => 'Search Subject Levels',
+	'all_items' => 'All Subject Levels',
+	'edit_item' => 'Edit Subject Level',
+	'update_item' => 'Update Subject Level',
+	'add_new_item' => 'Add New Subject Level',
+	'new_item_name' => 'New Subject Level',
+	'menu_name' => 'Subject Level',
+	'view_item' => 'View Subject Levels',
+	'popular_items' => 'Popular Subject Levels',
+	'add_or_remove_items' => 'Add or remove Subject Levels',
+	'choose_from_most_used' => 'Choose from the most used Subject Levels',
+	'not_found' => 'No Subject Levels found'
+);
+register_taxonomy(
+	'subject_level',
+	array('cg_class', 'cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Subject Level' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'subject-level' ),
+		'labels' => $labels
+	)
+);
+}
+
+
 //* Create custom Criteria taxonomy 
 add_action( 'init', 'create_criteria_taxonomy' );
 function create_criteria_taxonomy() {
