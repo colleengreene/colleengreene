@@ -255,6 +255,39 @@ register_taxonomy(
 }
 
 
+//* Create custom Class Topic taxonomy 
+add_action( 'init', 'create_class_topic_taxonomy' );
+function create_class_topic_taxonomy() {
+$labels = array(
+	'name' => 'Class Topic',
+	'singular_name' => 'Class Topic',
+	'search_items' => 'Search Class Topics',
+	'all_items' => 'All Class Topics',
+	'edit_item' => 'Edit Class Topic',
+	'update_item' => 'Update Class Topic',
+	'add_new_item' => 'Add New Class Topic',
+	'new_item_name' => 'New Class Topic',
+	'menu_name' => 'Class Topic',
+	'view_item' => 'View Class Topics',
+	'popular_items' => 'Popular Class Topics',
+	'add_or_remove_items' => 'Add or remove Class Topics',
+	'choose_from_most_used' => 'Choose from the most used Class Topics',
+	'not_found' => 'No Class Topics found'
+);
+register_taxonomy(
+	'class_topic',
+	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Class Topic' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'class-topic' ),
+		'labels' => $labels
+	)
+);
+}
+
+
 //* Create custom Audience taxonomy 
 add_action( 'init', 'create_audience_taxonomy' );
 function create_audience_taxonomy() {
