@@ -290,7 +290,7 @@ function cg_cpt_remove_post_info_genesis() {
     }
 
 
-// function and action to order classes alphabetically
+// function and action to order Classes CPT alphabetically
 
 function alpha_order_class( $query ) {
     if ( $query->is_post_type_archive('cg_class') && $query->is_main_query() ) {
@@ -302,7 +302,19 @@ function alpha_order_class( $query ) {
 add_action( 'pre_get_posts', 'alpha_order_class' );
 
 
-// function and action to order classes alphabetically
+// function and action to order Lectures CPT alphabetically
+
+function alpha_order_lecture( $query ) {
+    if ( $query->is_post_type_archive('cg_lecture') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+
+add_action( 'pre_get_posts', 'alpha_order_lecture' );
+
+
+// function and action to order Guides CPT alphabetically
 
 function alpha_order_guide( $query ) {
     if ( $query->is_post_type_archive('cg_guide') && $query->is_main_query() ) {
