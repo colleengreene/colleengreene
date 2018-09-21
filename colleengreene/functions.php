@@ -79,7 +79,7 @@ if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealo
 <!-- Start Sign UP Box -->
 <div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span><br />
 Interested in Hispanic genealogy and history?<br />
-<a href="http://www.colleengreene.com/email-newsletters/hispanic-research-heritage/" title="Hispanic Research & Heritage Newsletter"><strong>SIGN UP NOW with your email address</strong></a> to get my FREE email newsletter, <strong><em>HISPANIC RESEARCH & HERITAGE</em></strong>, delivered to your inbox the 1st week of every month! Packed with bonus tips, collections, events, and news recommended by me. Your email address will never be sold or shared with others.</div>
+<a href="http://www.colleengreene.com/email-newsletters/hispanic-research-heritage/" title="Hispanic Research & Heritage Newsletter"><strong>SIGN UP NOW with your email address</strong></a> to get my FREE email newsletter, <strong><em>HISPANIC RESEARCH & HERITAGE</em></strong>, delivered to your inbox the last week of every month! Packed with bonus tips, collections, events, and news recommended by me. Your email address will never be sold or shared with others.</div>
 <!-- End Sign Up-->
 
 <?php }
@@ -98,6 +98,7 @@ function sp_custom_footer() {
 }
 
 
+
 //* Create custom Classes post type
 add_action( 'init', 'create_post_type_cg_class' );
 function create_post_type_cg_class() { // must give each function a unique name
@@ -107,7 +108,7 @@ function create_post_type_cg_class() { // must give each function a unique name
   register_post_type( 'cg_class',
     array(
       'labels' => array(
-        'name' => __( 'Classes' ),
+        'name' => __( 'My Classes' ),
         'singular_name' => __( 'Class' ),
 	 'search_items' => _( 'Search Classes' ),
 	 'all_items' => _( 'All Classes' ),
@@ -115,7 +116,7 @@ function create_post_type_cg_class() { // must give each function a unique name
 	 'update_item' => _( 'Update Class' ),
 	 'add_new_item' => _( 'Add New Class' ),
 	 'new_item_name' => _( 'New Class Name' ),
-	 'menu_name' => _( 'Classes' ),
+	 'menu_name' => _( 'My Classes' ),
       ),
       'public' => true,
       'hierarchical' => true,
@@ -129,6 +130,8 @@ function create_post_type_cg_class() { // must give each function a unique name
 }
 
 
+
+
 //* Create custom Lectures post type
 add_action( 'init', 'create_post_type_cg_lecture' );
 function create_post_type_cg_lecture() { // must give each function a unique name
@@ -138,7 +141,7 @@ function create_post_type_cg_lecture() { // must give each function a unique nam
   register_post_type( 'cg_lecture',
     array(
       'labels' => array(
-        'name' => __( 'Lectures' ),
+        'name' => __( 'My Lectures' ),
         'singular_name' => __( 'Lecture' ),
 	 'search_items' => _( 'Search Lectures' ),
 	 'all_items' => _( 'All Lectures' ),
@@ -146,17 +149,19 @@ function create_post_type_cg_lecture() { // must give each function a unique nam
 	 'update_item' => _( 'Update Lecture' ),
 	 'add_new_item' => _( 'Add New Lecture' ),
 	 'new_item_name' => _( 'New Lecture Name' ),
-	 'menu_name' => _( 'Lectures' ),
+	 'menu_name' => _( 'My Lectures' ),
       ),
       'public' => true,
       'hierarchical' => true,
       'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
+      'taxonomies' => array( 'category', 'post_tag'),
       'has_archive' => true,
 	'query_var' => true,
 	'rewrite' => array( 'slug' => 'lectures' ),
     )
   );
 }
+
 
 
 //* Create custom Workshops post type
@@ -168,7 +173,7 @@ function create_post_type_cg_workshop() { // must give each function a unique na
   register_post_type( 'cg_workshop',
     array(
       'labels' => array(
-        'name' => __( 'Workshops' ),
+        'name' => __( 'My Workshops' ),
         'singular_name' => __( 'Workshop' ),
 	 'search_items' => _( 'Search Workshops' ),
 	 'all_items' => _( 'All Workshops' ),
@@ -176,11 +181,12 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 	 'update_item' => _( 'Update Workshop' ),
 	 'add_new_item' => _( 'Add New Workshop' ),
 	 'new_item_name' => _( 'New Workshop Name' ),
-	 'menu_name' => _( 'Workshops' ),
+	 'menu_name' => _( 'My Workshops' ),
       ),
       'public' => true,
       'hierarchical' => true,
       'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
+      'taxonomies' => array( 'category', 'post_tag'),
       'has_archive' => true,
 	'query_var' => true,
 	'rewrite' => array( 'slug' => 'workshops' ),
@@ -189,136 +195,6 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 }
 
 
-//* Create custom Genealogy Experience Level taxonomy 
-add_action( 'init', 'create_genealogy_level_taxonomy' );
-function create_genealogy_level_taxonomy() {
-$labels = array(
-	'name' => 'Genealogy Level',
-	'singular_name' => 'Genealogy Level',
-	'search_items' => 'Search Genealogy Levels',
-	'all_items' => 'All Genealogy Levels',
-	'edit_item' => 'Edit Genealogy Level',
-	'update_item' => 'Update Genealogy Level',
-	'add_new_item' => 'Add New Genealogy Level',
-	'new_item_name' => 'New Genealogy Level',
-	'menu_name' => 'Genealogy Level',
-	'view_item' => 'View Genealogy Levels',
-	'popular_items' => 'Popular Genealogy Levels',
-	'add_or_remove_items' => 'Add or remove Genealogy Levels',
-	'choose_from_most_used' => 'Choose from the most used Levels',
-	'not_found' => 'No Genealogy Levels found'
-);
-register_taxonomy(
-	'genealogy_level',
-	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
-	array(
-		'label' => __( 'Genealogy Level' ),
-		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'genealogy-level' ),
-		'labels' => $labels
-	)
-);
-}
-
-
-//* Create custom Subject Experience Level taxonomy 
-add_action( 'init', 'create_subject_level_taxonomy' );
-function create_subject_level_taxonomy() {
-$labels = array(
-	'name' => 'Subject Level',
-	'singular_name' => 'Subject Level',
-	'search_items' => 'Search Subject Levels',
-	'all_items' => 'All Subject Levels',
-	'edit_item' => 'Edit Subject Level',
-	'update_item' => 'Update Subject Level',
-	'add_new_item' => 'Add New Subject Level',
-	'new_item_name' => 'New Subject Level',
-	'menu_name' => 'Subject Level',
-	'view_item' => 'View Subject Levels',
-	'popular_items' => 'Popular Subject Levels',
-	'add_or_remove_items' => 'Add or remove Subject Levels',
-	'choose_from_most_used' => 'Choose from the most used Subject Levels',
-	'not_found' => 'No Subject Levels found'
-);
-register_taxonomy(
-	'subject_level',
-	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
-	array(
-		'label' => __( 'Subject Level' ),
-		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'subject-level' ),
-		'labels' => $labels
-	)
-);
-}
-
-
-//* Create custom Class Topic taxonomy 
-add_action( 'init', 'create_class_topic_taxonomy' );
-function create_class_topic_taxonomy() {
-$labels = array(
-	'name' => 'Class Topic',
-	'singular_name' => 'Class Topic',
-	'search_items' => 'Search Class Topics',
-	'all_items' => 'All Class Topics',
-	'edit_item' => 'Edit Class Topic',
-	'update_item' => 'Update Class Topic',
-	'add_new_item' => 'Add New Class Topic',
-	'new_item_name' => 'New Class Topic',
-	'menu_name' => 'Class Topic',
-	'view_item' => 'View Class Topics',
-	'popular_items' => 'Popular Class Topics',
-	'add_or_remove_items' => 'Add or remove Class Topics',
-	'choose_from_most_used' => 'Choose from the most used Class Topics',
-	'not_found' => 'No Class Topics found'
-);
-register_taxonomy(
-	'class_topic',
-	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
-	array(
-		'label' => __( 'Class Topic' ),
-		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'class-topic' ),
-		'labels' => $labels
-	)
-);
-}
-
-
-//* Create custom Audience taxonomy 
-add_action( 'init', 'create_audience_taxonomy' );
-function create_audience_taxonomy() {
-$labels = array(
-	'name' => 'Audience',
-	'singular_name' => 'Audience',
-	'search_items' => 'Search Audience',
-	'all_items' => 'All Audiences',
-	'edit_item' => 'Edit Audience',
-	'update_item' => 'Update Audience',
-	'add_new_item' => 'Add New Audience',
-	'new_item_name' => 'New Audience Name',
-	'menu_name' => 'Audience',
-	'view_item' => 'View Audience',
-	'popular_items' => 'Popular Audiences',
-	'add_or_remove_items' => 'Add or remove audience',
-	'choose_from_most_used' => 'Choose from the most used audiences',
-	'not_found' => 'No audiences found'
-);
-register_taxonomy(
-	'audience',
-	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
-	array(
-		'label' => __( 'Audience' ),
-		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'audience' ),
-		'labels' => $labels
-	)
-);
-}
 
 
 //* Create custom Criteria taxonomy 
@@ -354,6 +230,11 @@ register_taxonomy(
 }
 
 
+
+
+
+
+
 //* Create custom Guides post types
 add_action( 'init', 'create_post_type_cg_guide' );
 function create_post_type_cg_guide() { // must give each function a unique name
@@ -363,7 +244,7 @@ function create_post_type_cg_guide() { // must give each function a unique name
   register_post_type( 'cg_guide',
     array(
       'labels' => array(
-        'name' => __( 'Guides' ),
+        'name' => __( 'My Guides' ),
         'singular_name' => __( 'Guide' ),
 	 'search_items' => _( 'Search Guides' ),
 	 'all_items' => _( 'All Guides' ),
@@ -371,11 +252,12 @@ function create_post_type_cg_guide() { // must give each function a unique name
 	 'update_item' => _( 'Update Guide' ),
 	 'add_new_item' => _( 'Add New Guide' ),
 	 'new_item_name' => _( 'New Guide Name' ),
-	 'menu_name' => _( 'Guides' ),
+	 'menu_name' => _( 'My Guides' ),
       ),
       'public' => true,
       'hierarchical' => true,
       'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
+      'taxonomies' => array( 'category', 'post_tag'),
       'has_archive' => true,
 	'query_var' => true,
 	'rewrite' => array( 'slug' => 'guides' ),
@@ -430,18 +312,6 @@ function alpha_order_lecture( $query ) {
 }
 
 add_action( 'pre_get_posts', 'alpha_order_lecture' );
-
-
-// function and action to order Workshops CPT alphabetically
-
-function alpha_order_workshop( $query ) {
-    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
-        $query->set( 'orderby', 'title' );
-        $query->set( 'order', 'ASC' );
-    }
-}
-
-add_action( 'pre_get_posts', 'alpha_order_workshop' );
 
 
 // function and action to order Guides CPT alphabetically
