@@ -99,7 +99,6 @@ function sp_custom_footer() {
 
 
 
-
 //* Create custom Lectures post type
 add_action( 'init', 'create_post_type_cg_lecture' );
 function create_post_type_cg_lecture() { // must give each function a unique name
@@ -199,10 +198,6 @@ register_taxonomy(
 
 
 
-
-
-
-
 //* Create custom Guides post types
 add_action( 'init', 'create_post_type_cg_guide' );
 function create_post_type_cg_guide() { // must give each function a unique name
@@ -234,6 +229,7 @@ function create_post_type_cg_guide() { // must give each function a unique name
 }
 
 
+
 //* Remove Post Info, Post Meta from CPT
 //* Borrowed from https://www.engagewp.com/remove-custom-post-type-post-meta-genesis/
 add_action ( 'get_header', 'cg_cpt_remove_post_info_genesis' );
@@ -243,6 +239,7 @@ function cg_cpt_remove_post_info_genesis() {
  		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 	}
 }
+
 
 
 //* On Guide Archive, shows only top-level post.
@@ -272,6 +269,7 @@ function alpha_order_lecture( $query ) {
 add_action( 'pre_get_posts', 'alpha_order_lecture' );
 
 
+
 // function and action to order Guides CPT alphabetically
 
 function alpha_order_guide( $query ) {
@@ -282,6 +280,7 @@ function alpha_order_guide( $query ) {
 }
 
 add_action( 'pre_get_posts', 'alpha_order_guide' );
+
 
 
 //* End changes by Colleen
