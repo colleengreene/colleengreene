@@ -93,7 +93,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2018 <a title="Colleen Robledo Greene" href="http://www.colleengreene.com/">Colleen Robledo Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="http://www.colleengreene.com/wp-admin">Admin</a></p>
+	<p>&copy; 2007 – <?php echo date('Y'); ?> <a title="Colleen Robledo Greene" href="http://www.colleengreene.com/">Colleen Robledo Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="http://www.colleengreene.com/wp-admin">Admin</a></p>
 	<?php
 }
 
