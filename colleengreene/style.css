@@ -197,6 +197,31 @@ ul {
 	padding: 0;
 }
 
+
+
+/* Copying over the button links I made for VGA */
+.vga-button-gray-outline {
+  	display: inline-block; 
+	float: none;
+	background-color: #CC9E61; 
+	border: 2px solid #555555 !important;
+	padding: 0 10px;
+    	color: #0084b2;
+	text-transform: uppercase;
+	text-align: center;	
+}
+.vga-button-blue-outline {
+  	display: inline-block; 
+	float: none;
+	background: transparent; 
+	border: 2px solid #0084b2 !important;
+	padding: 14px 14px;
+    	color: #0084b2;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
 blockquote,
 blockquote::before {
 	color: #000; /* Changed by Colleen. Moved from JetPack CSS */
