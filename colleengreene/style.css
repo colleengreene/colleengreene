@@ -1157,7 +1157,7 @@ Content Area
 }
 
 .entry-meta {
-	color: #999;
+	color: #4c4c4c; /* Changed by Colleen to improve color contrast for accessibility. */
 	font-size: 14px;
 	font-size: 1.4rem;
 }
