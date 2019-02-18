@@ -199,7 +199,8 @@ ul {
 
 blockquote,
 blockquote::before {
-	color: #999;
+	color: #000; /* Changed by Colleen. Moved from JetPack CSS */
+    	background-color: #f4f4f4; /* Changed by Colleen. Moved from JetPack CSS */
 }
 
 blockquote {
