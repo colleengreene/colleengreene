@@ -1303,19 +1303,19 @@ Content Area
 /* Sign Up Box added by Colleen */
 
 .signup-box {
-	background: #CC9E61;
+	background: #600000;
 	border:2px solid #626266;
-	color:#020304;
+	color:#CC9E61;
 	font-weight: normal;
 	position:relative;
 	margin:2px 0 10px 0;
 	overflow:hidden;
 	padding:1em;
-font-size:90%;
+	font-size:90%;
 }
 
 .signup-box a {
-	color:#541F14;
+	color:#dbdbdb;
 	text-decoration: underline;
 }
 
@@ -1327,8 +1327,8 @@ font-size:90%;
 
 .signup-box-heading {
 	font-size:150%;
-	color:#541F14;
-font-weight: bold;
+	color:#dbdbdb;
+	font-weight: bold;
 }
 
 /* Sign Up Box */
