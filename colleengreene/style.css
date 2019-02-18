@@ -727,9 +727,6 @@ img.alignright,
 	margin-bottom: 0.4rem;
 }
 
-.author-box a {
-	border-bottom: 1px solid #ddd;
-}
 
 .author-box p {
 	margin-bottom: 0;
@@ -1183,7 +1180,6 @@ Content Area
 }
 
 .entry-content a {
-	border-bottom: 1px solid #ddd;
 	color: #06c; /* Changed by Colleen */
 }
 
@@ -1231,10 +1227,6 @@ Content Area
 	color: #4c4c4c; /* Changed by Colleen to improve color contrast for accessibility. */
 	font-size: 14px;
 	font-size: 1.4rem;
-}
-
-.entry-meta a {
-	border-bottom: 1px solid #ddd;
 }
 
 .entry-header .entry-meta {
@@ -1374,10 +1366,6 @@ Content Area
 	background-color: #06c; /* Changed by Colleen */
 }
 
-.entry-pagination a {
-	border-bottom: 1px solid #ddd;
-}
-
 /* Comments
 --------------------------------------------- */
 
@@ -1398,11 +1386,6 @@ Content Area
 .entry-pings {
 	padding: 40px 40px 16px;
 	padding: 4rem 4rem 1.6rem;
-}
-
-.comment-respond a,
-.entry-comments a {
-	border-bottom: 1px solid #ddd;
 }
 
 .comment-content {
@@ -1476,7 +1459,6 @@ Sidebars
 }
 
 .sidebar a {
-	border-bottom: 1px solid #ddd;
 	color: #06c; /* Changed by Colleen */
 }
 
@@ -1601,9 +1583,6 @@ Site Footer
 	text-align: center;
 }
 
-.site-footer a {
-	border-bottom: 1px solid #ddd;
-}
 
 .site-footer p {
 	margin-bottom: 0;
