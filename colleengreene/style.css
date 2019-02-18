@@ -1286,7 +1286,7 @@ Content Area
 /* Tip Box added by Colleen */
 
 .tip-box {
-	background:#CC9E61;
+	background:#f5f5f5;
 	border:2px solid #626266;
 	color: #020304;
 	font-size:95%;
@@ -1303,7 +1303,7 @@ Content Area
 }
 
 .tip-box a:hover {
-	color: #f5f5f5;
+	color: #CC9E61;
 }
 
 /* End Tip Box */
