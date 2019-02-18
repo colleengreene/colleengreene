@@ -169,7 +169,7 @@ textarea:focus,
 }
 
 a {
-	color: #666;
+	color: #006fc6; /* Changed by Colleen */
 	text-decoration: none;
 }
 
@@ -181,6 +181,12 @@ a img {
 a:hover {
 	color: #333;
 }
+
+/* Added by Colleen */
+a:visited {
+	color: #005293;
+}
+
 
 p {
     	font-size: 1em; /* Added by Colleen */
