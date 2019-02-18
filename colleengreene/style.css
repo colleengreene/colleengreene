@@ -199,6 +199,34 @@ ul {
 
 
 
+/* *** Custom button styles added by Colleen *** */
+
+/* *** Adding a red button *** */
+
+.red-button {
+	background-color: #CC9E61;
+	border-radius: 25px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	white-space: normal;
+	width: auto;
+}
+
+.red-button:hover {
+	border-radius: 25px;
+	background-color: #8D9981;
+	color: #fff;
+}
+
+.red-button-entry-content a {
+	color: #ffffff;
+}
+
+
 /* Added by Colleen. Copying over the button links I made for VGA */
 .vga-button-gray-outline {
   	display: inline-block; 
