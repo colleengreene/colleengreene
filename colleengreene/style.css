@@ -571,14 +571,14 @@ Common Classes
 }
 
 
-img.centered,
+.centered,
 .aligncenter {
 	display: block;
 	margin: 0 auto 24px;
 	margin: 0 auto 2.4rem;
 }
 
-img.alignnone {
+.alignnone {
 	margin-bottom: 12px;
 	margin-bottom: 1.2rem;
 }
