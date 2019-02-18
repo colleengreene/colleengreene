@@ -134,8 +134,8 @@ html {
 
 body {
 	background-color: #f5f5f5;
-	color: #666;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #2a2e33; /* Changed by Colleen */
+	font-family: Open Sans,sans-serif; /* Changed by Colleen */
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
