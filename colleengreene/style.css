@@ -143,13 +143,6 @@ body {
 }
 
 
-/* Changing text in paragraph tags */
-p {
-    	font-size: 1em;
-	line-height: 1.8;
-}
-
-
 a,
 button,
 input:focus,
@@ -190,6 +183,8 @@ a:hover {
 }
 
 p {
+    	font-size: 1em; /* Added by Colleen */
+	line-height: 1.8;  /* Added by Colleen */
 	margin: 0 0 24px;
 	margin: 0 0 2.4rem;
 	padding: 0;
