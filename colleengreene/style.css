@@ -1217,17 +1217,64 @@ Content Area
 
 
 /* Tip Box added by Colleen */
-.tip-box { background:#CC9E61; border:2px solid #626266; color: #020304; font-size:95%; position:relative; margin:2px 0px 10px 0px; overflow:hidden; padding: 1em; }
-.tip-box-heading { font-size:150%; color:#541F14; font-weight:bold; }
-.tip-box a:hover {color: #f5f5f5;}
+
+.tip-box {
+	background:#CC9E61;
+	border:2px solid #626266;
+	color: #020304;
+	font-size:95%;
+	position:relative;
+	margin:2px 0px 10px 0px;
+	overflow:hidden;
+	padding: 1em;
+}
+
+.tip-box-heading {
+	font-size:150%;
+	color:#541F14; 
+	font-weight:bold;
+}
+
+.tip-box a:hover {
+	color: #f5f5f5;
+}
+
 /* End Tip Box */
 
+
 /* Sign Up Box added by Colleen */
-.signup-box { background: #CC9E61; border:2px solid #626266; color:#020304; font-weight: normal; position:relative; margin:2px 0px 10px 0px; overflow:hidden; padding:1em; font-size:90%; }
-.signup-box a { color:#541F14; text-decoration: underline; }
-.signup-box a:hover {color: #f5f5f5; text-decoration: underline; background-color: #333333; }
-.signup-box-heading { font-size:150%; color:#541F14; font-weight:bold; }
+
+.signup-box {
+	background: #CC9E61;
+	border:2px solid #626266;
+	color:#020304;
+	font-weight: normal;
+	position:relative;
+	margin:2px 0px 10px 0px;
+	overflow:hidden;
+	padding:1em;
+font-size:90%;
+}
+
+.signup-box a {
+	color:#541F14;
+	text-decoration: underline;
+}
+
+.signup-box a:hover {
+	color: #f5f5f5;
+	text-decoration: underline;
+	background-color: #333333; 
+}
+
+.signup-box-heading {
+	font-size:150%;
+	color:#541F14;
+font-weight:bold;
+}
+
 /* Sign Up Box */
+
 
 
 /* Pagination
