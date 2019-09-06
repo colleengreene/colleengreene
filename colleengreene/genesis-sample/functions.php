@@ -204,6 +204,32 @@ function genesis_sample_comments_gravatar( $args ) {
 //* ***** Begin changes by Colleen *****
 
 
+/* Add eNews Signup Box before Select Posts */
+function enews_signup_box() {
+if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealogy', 'Hispanic genealogy'))) { ?>
+
+<!-- Start Sign UP Box -->
+<div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span><br />
+Interested in Hispanic genealogy and history?<br />
+<a href="http://www.colleengreene.com/email-newsletters/hispanic-research-heritage/" title="Hispanic Research & Heritage Newsletter"><strong>SIGN UP NOW with your email address</strong></a> to get my FREE email newsletter, <strong><em>HISPANIC RESEARCH & HERITAGE</em></strong>, delivered to your inbox the last week of every month! Packed with bonus tips, collections, events, and news recommended by me. Your email address will never be sold or shared with others.</div>
+<!-- End Sign Up-->
+
+<?php }
+}
+add_action('genesis_entry_content', 'enews_signup_box', 20);
+/* End eNews Signup Box after Select Posts */
+
+
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p>&copy; 2007 – <?php echo date('Y'); ?> <a title="Colleen Robledo Greene" href="http://www.colleengreene.com/">Colleen Robledo Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="http://www.colleengreene.com/wp-admin">Admin</a></p>
+	<?php
+}
+
+
 //* Create custom Lectures post type
 add_action( 'init', 'create_post_type_cg_lecture' );
 function create_post_type_cg_lecture() { // must give each function a unique name
