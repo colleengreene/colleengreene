@@ -330,6 +330,17 @@ function create_post_type_cg_guide() { // must give each function a unique name
 }
 
 
+//* Remove Post Info, Post Meta from CPT
+//* Borrowed from https://www.engagewp.com/remove-custom-post-type-post-meta-genesis/
+add_action ( 'get_header', 'cg_cpt_remove_post_info_genesis' );
+function cg_cpt_remove_post_info_genesis() {
+ 	if ( 'post' !== get_post_type() ) {
+		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+ 		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+	}
+}
+
+
 //* End changes by Colleen
 
 
