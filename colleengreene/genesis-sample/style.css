@@ -1936,6 +1936,31 @@ p.entry-meta {
 	clear: none;
 }
 
+/* Tip Box added by Colleen */
+
+.tip-box {
+	background:#f5f5f5;
+	border:2px solid #626266;
+	color: #020304;
+	font-size:95%;
+	position:relatie;
+	margin:2px 0 10px 0;
+	overflow:hidden;
+	padding: 1em;
+}
+
+.tip-box-heading {
+	font-size:150%;
+	color:#541F14; 
+	font-weight:bold;
+}
+
+.tip-box a:hover {
+	color: #CC9E61;
+}
+
+/* End Tip Box */
+
 
 
 
