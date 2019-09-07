@@ -1046,7 +1046,10 @@ img.alignright,
 
 .site-header {
 	/* background-color: #fff; */ /* Changed by Colleen */
-	background-color: #541F14; /* Changed by Colleen */
+	/* background-color: #541F14; */ /* Changed by Colleen */
+	background-color: #355356;
+	border-top: #C52033 3px solid; /* Added by Colleen */
+	border-bottom: #C52033 3px solid; /* Added by Colleen */
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
 }
