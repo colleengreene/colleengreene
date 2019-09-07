@@ -143,8 +143,8 @@ genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
 // Repositions primary navigation menu.
-// remove_action( 'genesis_after_header', 'genesis_do_nav' ); //Modified by Colleen to put it back
-// add_action( 'genesis_header', 'genesis_do_nav', 12 );
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 // Repositions the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
@@ -202,7 +202,6 @@ function genesis_sample_comments_gravatar( $args ) {
 
 
 //* ***** Begin changes by Colleen *****
-
 
 
 //* Add in Wrap Content Widget Areas
