@@ -473,7 +473,8 @@ input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"],
 .button {
-	background-color: #333;
+	/* background-color: #333; Changed by Colleen */
+	background-color: #541F14;
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -920,6 +921,10 @@ img.alignright,
 	padding: 30px;
 }
 
+.enews-widget .widget-title {
+    color: #4c4c4c !important;
+}
+
 .enews-widget input {
 	font-size: 16px;
 	margin-bottom: 10px;
@@ -1083,7 +1088,8 @@ img.alignright,
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	color: #333;
+	/* color: #333; Changed by Colleen */ 
+	color: #F5F5F5; /* Changed by Colleen */
 	text-decoration: none;
 }
 
@@ -2032,3 +2038,4 @@ div.mc-field-group.input-group li {
 input#mc-embedded-subscribe {
 	background: #541F14 !important;
 }
+
