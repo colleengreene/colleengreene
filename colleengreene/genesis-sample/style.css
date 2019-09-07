@@ -1121,13 +1121,17 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-	color: #333;
+	/* color: #333; Changed by Colleen */
+	color: #F5F5F5; /* Changed by Colleen */
 	display: block;
-	font-size: 15px;
+	/* font-size: 15px; Changed by Colleen */
+	font-size: 100%; /* Changed by Colleen */
 	font-weight: 400;
 	outline-offset: -1px;
-	padding-bottom: 12px;
-	padding-top: 12px;
+	/* padding-bottom: 12px; Changed by Colleen */
+	padding-bottom: 0px; /* Changed by Colleen */
+	/* padding-top: 12px; Changed by Colleen */
+	padding-top: 20px; /* Changed by Colleen */
 	text-decoration: none;
 }
 
@@ -1158,6 +1162,7 @@ img.alignright,
 
 .genesis-nav-menu .sub-menu a {
 	background-color: #fff;
+	color: #355356; /* Added by Colleen */
 	font-size: 14px;
 	position: relative;
 	word-wrap: break-word;
