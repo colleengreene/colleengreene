@@ -1254,42 +1254,6 @@ Content Area
 }
 
 
-
-/* Sign Up Box added by Colleen */
-
-.signup-box {
-	background: #600000;
-	border:2px solid #626266;
-	color:#CC9E61;
-	font-weight: normal;
-	position:relative;
-	margin:2px 0 10px 0;
-	overflow:hidden;
-	padding:1em;
-	font-size:90%;
-}
-
-.signup-box a {
-	color:#dbdbdb;
-	text-decoration: underline;
-}
-
-.signup-box a:hover {
-	color: #f5f5f5;
-	text-decoration: underline;
-	background-color: #333333; 
-}
-
-.signup-box-heading {
-	font-size:150%;
-	color:#dbdbdb;
-	font-weight: bold;
-}
-
-/* Sign Up Box */
-
-
-
 /* Pagination
 --------------------------------------------- */
 

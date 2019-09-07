@@ -1961,6 +1961,40 @@ p.entry-meta {
 
 /* End Tip Box */
 
+/* Sign Up Box added by Colleen */
+
+.signup-box {
+	background: #355356;
+	border:2px solid #171716;
+	/* color: #CCA589; Not enough color contrast */
+	color: #F5F5F5;
+	font-weight: normal;
+	position:relative;
+	margin:2px 0 10px 0;
+	overflow:hidden;
+	padding:1em;
+	font-size:90%;
+}
+
+.signup-box a {
+	color:#F5F5F5;
+	text-decoration: underline;
+}
+
+.signup-box a:hover {
+	color: #F5F5F5;
+	text-decoration: underline;
+	background-color: #333333; 
+}
+
+.signup-box-heading {
+	font-size:150%;
+	color:#F5F5F5;
+	font-weight: bold;
+}
+
+/* Sign Up Box */
+
 
 
 
