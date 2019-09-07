@@ -236,36 +236,6 @@ ul {
 }
 
 
-/* Added by Colleen. Copying over the button links I made for VGA */
-.vga-button-gray-outline {
-  	display: inline-block; 
-	float: none;
-	background-color: #CC9E61; 
-	border: 2px solid #555555 !important;
-	padding: 0 10px;
-    	color: #0084b2;
-	text-transform: uppercase;
-	text-align: center;	
-}
-.vga-button-blue-outline {
-  	display: inline-block; 
-	float: none;
-	background: transparent; 
-	border: 2px solid #0084b2 !important;
-	padding: 14px 14px;
-    	color: #0084b2;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-
-/* Added by Colleen, to create custom HRs */
-
-.dashed {
-	border-top: 1px dashed #CC9E61;
-}
-
-
 
 blockquote,
 blockquote::before {
