@@ -1918,6 +1918,27 @@ p.entry-meta {
 
 }
 
+
+
+/* Allows selected content to wrap around an image. Added by Colleen. */
+
+.wraparound {
+	clear: none;
+}
+
+
+/* Misc Styles added by Colleen
+---------------------------------------------------------------------------- */
+
+/* Allows selected content to wrap around an image. Added by Colleen. */
+
+.wraparound {
+	clear: none;
+}
+
+
+
+
 /* *** Custom class added by Colleen for footnote plugin, to make text smaller than post body*** */
 
 div .footnotes {
