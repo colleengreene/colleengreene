@@ -1211,7 +1211,7 @@ img.alignright,
 	background-color: transparent;
 	border-width: 0;
 	/* color: #333; Changed by Colleen */
-	color: #F5F5F5; /* Changed by Colleen */
+	color: #F5F5F5 !important; /* Changed by Colleen */
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1225,8 +1225,8 @@ img.alignright,
 .sub-menu-toggle:hover {
 	background-color: transparent;
 	border-width: 0;
-	color: #0073e5; /* Changed by Colleen */
-	color: #F5F5F5; /* Changed by Colleen */
+	/* color: #0073e5; Changed by Colleen */
+	color: #F5F5F5 !important; /* Changed by Colleen */
 }
 
 .menu-toggle {
@@ -1293,8 +1293,8 @@ img.alignright,
 
 .topwrapwrapper {
 	font-size: 115%;
-	font-style: italic;
-    	text-align: center;
+	font-style: italic !important;
+    	text-align: center !important;
 	padding-top: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
