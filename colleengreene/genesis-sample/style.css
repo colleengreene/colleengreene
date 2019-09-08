@@ -1050,9 +1050,8 @@ img.alignright,
 ---------------------------------------------------------------------------- */
 
 .site-header {
-	/* background-color: #fff; */ /* Changed by Colleen */
+	/* background-color: #fff; Changed by Colleen */
 	background-color: #541F14; /* Changed by Colleen */
-	/* background-color: #355356; */ Changed by Colleen
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
 }
