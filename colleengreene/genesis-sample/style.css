@@ -1211,7 +1211,8 @@ img.alignright,
 .sub-menu-toggle {
 	background-color: transparent;
 	border-width: 0;
-	color: #333;
+	/* color: #333; Changed by Colleen */
+	color: #F5F5F5; /* Changed by Colleen */
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1225,7 +1226,8 @@ img.alignright,
 .sub-menu-toggle:hover {
 	background-color: transparent;
 	border-width: 0;
-	color: #0073e5;
+	color: #0073e5; /* Changed by Colleen */
+	color: #F5F5F5; /* Changed by Colleen */
 }
 
 .menu-toggle {
