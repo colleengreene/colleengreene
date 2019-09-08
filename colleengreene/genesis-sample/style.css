@@ -1292,6 +1292,8 @@ img.alignright,
 
 .topwrapwrapper {
 	font-size: 115%;
+	font-style: italic;
+    	text-align: center;
 	padding-top: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
