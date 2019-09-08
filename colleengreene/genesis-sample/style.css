@@ -1144,7 +1144,7 @@ img.alignright,
 
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #F5F5F5; Changed by Colleen
+	color: #F5F5F5; /* Changed by Colleen */
 	/* text-decoration: none; Changed by Colleen */
 	text-decoration: underline; /* Changed by Colleen */
 }
