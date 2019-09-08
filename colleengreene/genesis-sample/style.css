@@ -2050,3 +2050,9 @@ input#mc-embedded-subscribe {
 	background: #541F14 !important;
 }
 
+img.rcorners {
+  	width: 100%;
+	border: 2px solid #541F14;
+  	padding: 5px;
+}
+
