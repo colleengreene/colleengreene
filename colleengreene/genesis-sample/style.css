@@ -1533,7 +1533,7 @@ p.entry-meta {
 .site-footer {
 	background-color: #fff;
 	/* border-top: 1px solid #eee; Changed by Colleen */
-	border-top: 20px solid #541f14 !important; /* Changed by Colleen */
+	border-top: 5px solid #541f14 !important; /* Changed by Colleen */
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 30px;
