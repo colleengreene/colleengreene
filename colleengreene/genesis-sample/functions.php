@@ -249,9 +249,11 @@ function enews_signup_box() {
 if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealogy', 'Hispanic genealogy'))) { ?>
 
 <!-- Start Sign UP Box -->
-<div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span><br />
-Interested in Hispanic genealogy and history?<br />
-<a href="http://www.colleengreene.com/hispanic-research-heritage/" title="Hispanic Research & Heritage Newsletter"><strong>SIGN UP NOW with your email address</strong></a> to get my FREE email newsletter, <strong><em>HISPANIC RESEARCH & HERITAGE</em></strong>, delivered to your inbox the last week of every month! Packed with bonus tips, collections, events, and news recommended by me. Your email address will never be sold or shared with others.</div>
+<div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span>
+<p>Interested in Hispanic genealogy and history?</p>
+<p><a href="http://www.colleengreene.com/hispanic-research-heritage/" title="Hispanic Research & Heritage Newsletter">SIGN UP NOW with your email address</a> to get my FREE email newsletter, <strong><em>HISPANIC RESEARCH & HERITAGE</em></strong>, delivered to your inbox the last week of every month! Packed with bonus tips, collections, events, and news recommended by me. Your email address will never be sold or shared with others.</p>
+<p><a class="btn-white-outline" href="/hispanic-research-heritage/"><strong>Sign Me Up Now!</strong></a></p>
+</div>
 <!-- End Sign Up-->
 
 <?php }

@@ -259,6 +259,18 @@ blockquote {
 	color: #F5F5F5;
 }
 
+/* White Outline Button with Transparent Background */
+.btn-white-outline {
+  	display: inline-block; 
+	float: none;
+	border: 2px solid #FEFEFE !important;
+	border-radius: 5px;
+	padding: 0 10px;
+    	color: #FEFEFE;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 
 /* Added by Colleen. Copying over the button links I made for VGA */
 .vga-button-gray-outline {
