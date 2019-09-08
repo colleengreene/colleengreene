@@ -2027,6 +2027,16 @@ div .footnotes {
 
 /* *** Custom styles added by Colleen for embedded Mailchimp forms *** */
 
+/* eNews Extended Sidebar Form */
+
+.enews-widget .segment {
+     margin-bottom: 7px;
+}
+.enews-widget input[type="checkbox"] {
+     width: auto;
+     display: inline;
+}
+
 /* Form embedded in pages and posts */
 
 div #mc_embed_signup { 
