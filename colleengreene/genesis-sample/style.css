@@ -1137,11 +1137,17 @@ img.alignright,
 
 .genesis-nav-menu a:focus,
 .genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .current-menu-item > a {
+	color: #F5F5F5 !important; /* Changed by Colleen */
+	text-decoration: underline; /* Changed by Colleen */	
+
+}
+
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #0073e5;
-	text-decoration: none;
+	color: #F5F5F5; Changed by Colleen
+	/* text-decoration: none; Changed by Colleen */
+	text-decoration: underline; /* Changed by Colleen */
 }
 
 .genesis-nav-menu .sub-menu,
@@ -1161,8 +1167,8 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #fff;
-	color: #355356; /* Added by Colleen */
+	/* background-color: #fff; Changed by Colleen */
+	background-color: #541F14; /* Added by Colleen */
 	font-size: 14px;
 	position: relative;
 	word-wrap: break-word;
