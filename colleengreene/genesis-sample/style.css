@@ -237,9 +237,9 @@ blockquote {
 /* *** Adding a red button *** */
 
 .red-button {
-	background-color: #CC9E61;
+	background-color: #541f14;
 	border-radius: 25px;
-	color: #fff;
+	color: #F5F5F5;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 300;
@@ -251,12 +251,24 @@ blockquote {
 
 .red-button:hover {
 	border-radius: 25px;
-	background-color: #8D9981;
-	color: #fff;
+	background-color: #355356;
+	color: #F5F5F5;
 }
 
 .red-button-entry-content a {
-	color: #ffffff;
+	color: #F5F5F5;
+}
+
+/* White Outline Button with Transparent Background */
+.btn-white-outline {
+  	display: inline-block; 
+	float: none;
+	border: 2px solid #FEFEFE !important;
+	border-radius: 5px;
+	padding: 0 10px;
+    	color: #FEFEFE;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 
@@ -473,7 +485,8 @@ input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"],
 .button {
-	background-color: #333;
+	/* background-color: #333; Changed by Colleen */
+	background-color: #541F14;
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -920,6 +933,10 @@ img.alignright,
 	padding: 30px;
 }
 
+.enews-widget .widget-title {
+    color: #4c4c4c !important;
+}
+
 .enews-widget input {
 	font-size: 16px;
 	margin-bottom: 10px;
@@ -1045,7 +1062,7 @@ img.alignright,
 ---------------------------------------------------------------------------- */
 
 .site-header {
-	/* background-color: #fff; */ /* Changed by Colleen */
+	/* background-color: #fff; Changed by Colleen */
 	background-color: #541F14; /* Changed by Colleen */
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
@@ -1072,7 +1089,8 @@ img.alignright,
 }
 
 .site-title {
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: 40px; /* Changed by Colleen */
 	font-weight: 600;
 	line-height: 1;
 	margin-bottom: 0;
@@ -1081,7 +1099,8 @@ img.alignright,
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	color: #333;
+	/* color: #333; Changed by Colleen */ 
+	color: #F5F5F5; /* Changed by Colleen */
 	text-decoration: none;
 }
 
@@ -1113,23 +1132,33 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-	color: #333;
+	/* color: #333; Changed by Colleen */
+	color: #F5F5F5; /* Changed by Colleen */
 	display: block;
-	font-size: 15px;
+	/* font-size: 15px; Changed by Colleen */
+	font-size: 100%; /* Changed by Colleen */
 	font-weight: 400;
 	outline-offset: -1px;
-	padding-bottom: 12px;
-	padding-top: 12px;
+	/* padding-bottom: 12px; Changed by Colleen */
+	padding-bottom: 0px; /* Changed by Colleen */
+	/* padding-top: 12px; Changed by Colleen */
+	padding-top: 20px; /* Changed by Colleen */
 	text-decoration: none;
 }
 
 .genesis-nav-menu a:focus,
 .genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .current-menu-item > a {
+	color: #F5F5F5 !important; /* Changed by Colleen */
+	text-decoration: underline; /* Changed by Colleen */	
+
+}
+
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #0073e5;
-	text-decoration: none;
+	color: #F5F5F5; /* Changed by Colleen */
+	/* text-decoration: none; Changed by Colleen */
+	text-decoration: underline; /* Changed by Colleen */
 }
 
 .genesis-nav-menu .sub-menu,
@@ -1149,7 +1178,8 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #fff;
+	/* background-color: #fff; Changed by Colleen */
+	background-color: #541F14; /* Added by Colleen */
 	font-size: 14px;
 	position: relative;
 	word-wrap: break-word;
@@ -1192,7 +1222,8 @@ img.alignright,
 .sub-menu-toggle {
 	background-color: transparent;
 	border-width: 0;
-	color: #333;
+	/* color: #333; Changed by Colleen */
+	color: #F5F5F5 !important; /* Changed by Colleen */
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1206,7 +1237,8 @@ img.alignright,
 .sub-menu-toggle:hover {
 	background-color: transparent;
 	border-width: 0;
-	color: #0073e5;
+	/* color: #0073e5; Changed by Colleen */
+	color: #F5F5F5 !important; /* Changed by Colleen */
 }
 
 .menu-toggle {
@@ -1264,6 +1296,25 @@ img.alignright,
 	padding-top: 15px;
 	width: 100%;
 }
+
+
+
+
+/* Top wrap widget before content, added by Colleen 
+---------------------------------------------- */
+
+.topwrapwrapper {
+	font-size: 115%;
+	font-style: italic !important;
+    	text-align: center !important;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+	background-color: #355356;
+	color: #f5f5f5
+}
+
 
 /* Footer Menu
 --------------------------------------------- */
@@ -1493,7 +1544,8 @@ p.entry-meta {
 
 .site-footer {
 	background-color: #fff;
-	border-top: 1px solid #eee;
+	/* border-top: 1px solid #eee; Changed by Colleen */
+	border-top: 5px solid #541f14 !important; /* Changed by Colleen */
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 30px;
@@ -1899,6 +1951,86 @@ p.entry-meta {
 
 }
 
+
+
+/* Allows selected content to wrap around an image. Added by Colleen. */
+
+.wraparound {
+	clear: none;
+}
+
+
+/* Misc Styles added by Colleen
+---------------------------------------------------------------------------- */
+
+/* Allows selected content to wrap around an image. Added by Colleen. */
+
+.wraparound {
+	clear: none;
+}
+
+/* Tip Box added by Colleen */
+
+.tip-box {
+	background:#f5f5f5;
+	border:2px solid #626266;
+	color: #020304;
+	font-size:95%;
+	position:relative;
+	margin:2px 0 10px 0;
+	overflow:hidden;
+	padding: 1em;
+}
+
+.tip-box-heading {
+	font-size:150%;
+	color:#541F14; 
+	font-weight:bold;
+}
+
+.tip-box a:hover {
+	color: #CC9E61;
+}
+
+/* End Tip Box */
+
+/* Sign Up Box added by Colleen */
+
+.signup-box {
+	background: #355356;
+	border:2px solid #171716;
+	/* color: #CCA589; Not enough color contrast */
+	color: #F5F5F5;
+	font-weight: normal;
+	position:relative;
+	margin:2px 0 10px 0;
+	overflow:hidden;
+	padding:1em;
+	font-size:90%;
+}
+
+.signup-box a {
+	color:#F5F5F5;
+	text-decoration: underline;
+}
+
+.signup-box a:hover {
+	color: #F5F5F5;
+	text-decoration: underline;
+	background-color: #333333; 
+}
+
+.signup-box-heading {
+	font-size:150%;
+	color:#F5F5F5;
+	font-weight: bold;
+}
+
+/* Sign Up Box */
+
+
+
+
 /* *** Custom class added by Colleen for footnote plugin, to make text smaller than post body*** */
 
 div .footnotes {
@@ -1906,6 +2038,16 @@ div .footnotes {
 }
 
 /* *** Custom styles added by Colleen for embedded Mailchimp forms *** */
+
+/* eNews Extended Sidebar Form */
+
+.enews-widget .segment {
+     margin-bottom: 7px;
+}
+.enews-widget input[type="checkbox"] {
+     width: auto;
+     display: inline;
+}
 
 /* Form embedded in pages and posts */
 
@@ -1932,4 +2074,10 @@ div.mc-field-group.input-group li {
 
 input#mc-embedded-subscribe {
 	background: #541F14 !important;
+}
+
+img.rcorners {
+  	width: 100%;
+	border: 2px solid #541F14;
+  	padding: 5px;
 }
