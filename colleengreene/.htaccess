@@ -1,3 +1,5 @@
+RedirectMatch 301 ^/([0-9]{4})/([0-9]{2})/([0-9]{2})/(?!page/)(.+)$ http://www.colleengreene.com/$4
+
 ErrorDocument 401 "Error"
 ErrorDocument 403 "Error"
 
