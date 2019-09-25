@@ -444,6 +444,15 @@ function remove_thumbnail_lecture( $query ) {
 
 add_action( 'pre_get_posts', 'remove_thumbnail_lecture' );
 
+// Show 20 Lectures on Lectures Archive Page
+
+function cg_lecture( $query ) {
+    if ( $query->is_post_type_archive('cg_lecture') && $query->is_main_query() ) {
+            $query->set( 'posts_per_page', '20' );
+    }
+}
+
+add_action( 'pre_get_posts', 'cg_lecture' );
 
 
 // function and action to order Guides CPT alphabetically
