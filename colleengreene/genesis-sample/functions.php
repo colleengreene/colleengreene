@@ -334,33 +334,33 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 }
 
 
-//* Create custom Criteria taxonomy 
-add_action( 'init', 'create_criteria_taxonomy' );
-function create_criteria_taxonomy() {
+//* Create custom Teaching Topic taxonomy 
+add_action( 'init', 'create_cg_teaching_taxonomy' );
+function create_cg_teaching_taxonomy() {
 $labels = array(
-	'name' => 'Criteria',
-	'singular_name' => 'Criteria',
-	'search_items' => 'Search Criteria',
-	'all_items' => 'All Criteria',
-	'edit_item' => 'Edit Criteria',
-	'update_item' => 'Update Criteria',
-	'add_new_item' => 'Add New Criteria',
-	'new_item_name' => 'New Criteria Name',
-	'menu_name' => 'Criteria',
-	'view_item' => 'View Criteria',
-	'popular_items' => 'Popular Criteria',
-	'add_or_remove_items' => 'Add or remove criteria',
-	'choose_from_most_used' => 'Choose from the most used criteria',
-	'not_found' => 'No criteria found'
+	'name' => 'Teaching Topics',
+	'singular_name' => 'Teaching Topic',
+	'search_items' => 'Search Teaching Topics',
+	'all_items' => 'All Teaching Topics',
+	'edit_item' => 'Edit Teaching Topic',
+	'update_item' => 'Update Teaching Topic',
+	'add_new_item' => 'Add New Teaching Topic',
+	'new_item_name' => 'New Teaching Topic',
+	'menu_name' => 'Teaching Topics',
+	'view_item' => 'View Teaching Topic',
+	'popular_items' => 'Popular Teaching Topics',
+	'add_or_remove_items' => 'Add or remove teaching topics',
+	'choose_from_most_used' => 'Choose from the most used teaching topics',
+	'not_found' => 'No teaching topics found'
 );
 register_taxonomy(
-	'criteria',
-	array('cg_class'), //An array of post types that share this taxonomy
+	'cg_teaching',
+	array('cg_lecture'), //An array of post types that share this taxonomy
 	array(
-		'label' => __( 'Criteria' ),
+		'label' => __( 'Teaching' ),
 		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
 		'query_var' => true,
-		'rewrite' => array( 'slug' => 'criteria' ),
+		'rewrite' => array( 'slug' => 'teaching' ),
 		'labels' => $labels
 	)
 );
