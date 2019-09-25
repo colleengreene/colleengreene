@@ -434,6 +434,18 @@ function alpha_order_lecture( $query ) {
 add_action( 'pre_get_posts', 'alpha_order_lecture' );
 
 
+// function and add acton to remove the thumbnail from the archive view of Lectures CPT
+
+function remove_thumbnail_lecture( $query ) {
+    if ( $query->is_post_type_archive('cg_lecture') && $query->is_main_query() ) {
+	remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+    }
+}
+
+add_action( 'pre_get_posts', 'remove_thumbnail_lecture' );
+
+
+
 // function and action to order Guides CPT alphabetically
 
 function alpha_order_guide( $query ) {
