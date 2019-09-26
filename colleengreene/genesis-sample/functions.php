@@ -479,7 +479,15 @@ function remove_thumbnail_workshop( $query ) {
 add_action( 'pre_get_posts', 'remove_thumbnail_workshop' );
 
 
+// Show 20 Lectures on Workshops Archive Page
 
+function cg_workshop( $query ) {
+    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
+            $query->set( 'posts_per_page', '20' );
+    }
+}
+
+add_action( 'pre_get_posts', 'cg_workshop' );
 
 
 // function and action to order Guides CPT alphabetically
