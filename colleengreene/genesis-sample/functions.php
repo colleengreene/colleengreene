@@ -357,10 +357,10 @@ register_taxonomy(
 	'cg_teaching',
 	array('cg_lecture'), //An array of post types that share this taxonomy
 	array(
-		'label' => __( 'Teaching' ),
+		'label' => __( 'Teaching Topics' ),
 		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
 		'query_var' => true,
-		'rewrite' => array( 'slug' => 'teaching' ),
+		'rewrite' => array( 'slug' => 'speaking/topics' ),
 		'labels' => $labels
 	)
 );
