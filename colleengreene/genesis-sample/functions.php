@@ -455,6 +455,22 @@ function cg_lecture( $query ) {
 add_action( 'pre_get_posts', 'cg_lecture' );
 
 
+// function and action to order Workshops CPT alphabetically
+
+function alpha_order_workshop( $query ) {
+    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+
+add_action( 'pre_get_posts', 'alpha_order_workshop' );
+
+
+
+
+
+
 // function and action to order Guides CPT alphabetically
 
 function alpha_order_guide( $query ) {
