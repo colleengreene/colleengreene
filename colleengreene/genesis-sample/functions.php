@@ -444,6 +444,7 @@ function remove_thumbnail_lecture( $query ) {
 
 add_action( 'pre_get_posts', 'remove_thumbnail_lecture' );
 
+
 // Show 20 Lectures on Lectures Archive Page
 
 function cg_lecture( $query ) {
@@ -467,7 +468,15 @@ function alpha_order_workshop( $query ) {
 add_action( 'pre_get_posts', 'alpha_order_workshop' );
 
 
+// function and add acton to remove the thumbnail from the archive view of Workshops CPT
 
+function remove_thumbnail_workshop( $query ) {
+    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
+	remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+    }
+}
+
+add_action( 'pre_get_posts', 'remove_thumbnail_workshop' );
 
 
 
