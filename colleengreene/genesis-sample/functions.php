@@ -471,6 +471,8 @@ add_action( 'pre_get_posts', 'alpha_order_workshop' );
 
 
 
+
+
 // function and action to order Guides CPT alphabetically
 
 function alpha_order_guide( $query ) {
