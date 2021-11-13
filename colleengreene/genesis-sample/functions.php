@@ -334,39 +334,6 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 }
 
 
-//* Create custom Teaching Topic taxonomy 
-add_action( 'init', 'create_cg_teaching_taxonomy' );
-function create_cg_teaching_taxonomy() {
-$labels = array(
-	'name' => 'Teaching Topics',
-	'singular_name' => 'Teaching Topic',
-	'search_items' => 'Search Teaching Topics',
-	'all_items' => 'All Teaching Topics',
-	'edit_item' => 'Edit Teaching Topic',
-	'update_item' => 'Update Teaching Topic',
-	'add_new_item' => 'Add New Teaching Topic',
-	'new_item_name' => 'New Teaching Topic',
-	'menu_name' => 'Teaching Topics',
-	'view_item' => 'View Teaching Topic',
-	'popular_items' => 'Popular Teaching Topics',
-	'add_or_remove_items' => 'Add or remove teaching topics',
-	'choose_from_most_used' => 'Choose from the most used teaching topics',
-	'not_found' => 'No teaching topics found'
-);
-register_taxonomy(
-	'cg_teaching',
-	array('cg_lecture'), //An array of post types that share this taxonomy
-	array(
-		'label' => __( 'Teaching' ),
-		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'teaching' ),
-		'labels' => $labels
-	)
-);
-}
-
-
 //* Create custom Guides post types
 add_action( 'init', 'create_post_type_cg_guide' );
 function create_post_type_cg_guide() { // must give each function a unique name
@@ -395,6 +362,39 @@ function create_post_type_cg_guide() { // must give each function a unique name
 	'rewrite' => array( 'slug' => 'guides' ),
     )
   );
+}
+
+
+//* Create custom Teaching Topic taxonomy 
+add_action( 'init', 'create_cg_teaching_taxonomy' );
+function create_cg_teaching_taxonomy() {
+$labels = array(
+	'name' => 'Teaching Topics',
+	'singular_name' => 'Teaching Topic',
+	'search_items' => 'Search Teaching Topics',
+	'all_items' => 'All Teaching Topics',
+	'edit_item' => 'Edit Teaching Topic',
+	'update_item' => 'Update Teaching Topic',
+	'add_new_item' => 'Add New Teaching Topic',
+	'new_item_name' => 'New Teaching Topic',
+	'menu_name' => 'Teaching Topics',
+	'view_item' => 'View Teaching Topic',
+	'popular_items' => 'Popular Teaching Topics',
+	'add_or_remove_items' => 'Add or remove teaching topics',
+	'choose_from_most_used' => 'Choose from the most used teaching topics',
+	'not_found' => 'No teaching topics found'
+);
+register_taxonomy(
+	'cg_teaching',
+	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
+	array(
+		'label' => __( 'Teaching Topics' ),
+		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'speaking/topics' ),
+		'labels' => $labels
+	)
+);
 }
 
 
@@ -444,6 +444,7 @@ function remove_thumbnail_lecture( $query ) {
 
 add_action( 'pre_get_posts', 'remove_thumbnail_lecture' );
 
+
 // Show 20 Lectures on Lectures Archive Page
 
 function cg_lecture( $query ) {
@@ -453,6 +454,40 @@ function cg_lecture( $query ) {
 }
 
 add_action( 'pre_get_posts', 'cg_lecture' );
+
+
+// function and action to order Workshops CPT alphabetically
+
+function alpha_order_workshop( $query ) {
+    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+
+add_action( 'pre_get_posts', 'alpha_order_workshop' );
+
+
+// function and add acton to remove the thumbnail from the archive view of Workshops CPT
+
+function remove_thumbnail_workshop( $query ) {
+    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
+	remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+    }
+}
+
+add_action( 'pre_get_posts', 'remove_thumbnail_workshop' );
+
+
+// Show 20 Lectures on Workshops Archive Page
+
+function cg_workshop( $query ) {
+    if ( $query->is_post_type_archive('cg_workshop') && $query->is_main_query() ) {
+            $query->set( 'posts_per_page', '20' );
+    }
+}
+
+add_action( 'pre_get_posts', 'cg_workshop' );
 
 
 // function and action to order Guides CPT alphabetically
