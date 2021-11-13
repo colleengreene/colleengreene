@@ -251,7 +251,8 @@ if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealo
 <!-- Start Sign UP Box -->
 <div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span>
 <p>Interested in Hispanic genealogy and history?</p>
-<p><a href="https://www.facebook.com/hispanic.genealogy.heritage/" title="Hispanic Research & Heritage News">Follow our Hispanic Genealogy & Heritage Facebook Page</a>, which is packed with tips, collections, events, and news recommended by me. See you on Facebook today!</p>
+<p><a href="http://www.colleengreene.com/hispanic-research-heritage/" title="Hispanic Research & Heritage Newsletter">SIGN UP NOW with your email address</a> to get my FREE email newsletter, <strong><em>HISPANIC RESEARCH & HERITAGE</em></strong>, delivered to your inbox the last week of every month! Packed with bonus tips, collections, events, and news recommended by me. Your email address will never be sold or shared with others.</p>
+<p><a class="btn-white-outline" href="/hispanic-research-heritage/"><strong>Sign Me Up Now!</strong></a></p>
 </div>
 <!-- End Sign Up-->
 
@@ -266,7 +267,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; 2007 – <?php echo date('Y'); ?> <a title="Colleen Robledo Greene" href="https://www.colleengreene.com/">Colleen Robledo Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="https://www.colleengreene.com/wp-admin">Admin</a></p>
+	<p>&copy; 2007 – <?php echo date('Y'); ?> <a title="Colleen Robledo Greene" href="http://www.colleengreene.com/">Colleen Robledo Greene</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="http://www.colleengreene.com/wp-admin">Admin</a></p>
 	<?php
 }
 
