@@ -251,7 +251,7 @@ if ( is_single() && has_tag(array('Mexican genealogy', 'Mexican-American genealo
 <!-- Start Sign UP Box -->
 <div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span>
 <p>Interested in Hispanic genealogy and history?</p>
-<p><a href="https://www.facebook.com/hispanic.genealogy.heritage/" title="Hispanic Research & Heritage News">Follow our Hispanic Genealogy & Heritage Facebook Page</a>, which is packed with tips, collections, events, and news recommended by me. I scour the web for great information for you. See you on Facebook today!</p>
+<p><a href="https://www.facebook.com/hispanic.genealogy.heritage/" title="Hispanic Research & Heritage News">Follow our <strong><em>Hispanic Genealogy & Heritage</em></strong> Facebook Page</a>, which is packed with tips, collections, events, and news personally recommended by me. I scour the web for great information for you. <strong>See you on Facebook today!</strong></p>
 </div>
 <!-- End Sign Up-->
 
