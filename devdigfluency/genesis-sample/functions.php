@@ -264,3 +264,30 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+
+
+//* ***** Begin changes by Colleen *****
+
+
+//* Add in Wrap Content Widget Areas
+
+function cg_fullwrap_widgets() {
+    register_sidebar( array(          
+        'name' => __( 'Top Wrap', 'genesis' ),
+        'id' => 'topwrap',
+        'description' => __( 'Top Wrap', 'genesis' ),
+        'before_widget' => '<div class="wrap topwrap">',
+        'after_widget' => '</div>',
+    ) );
+
+ }
+add_action( 'widgets_init', 'cg_fullwrap_widgets' );
+
+ //* Add the top widgets in place
+function cg_top_wrap_widgets() {
+    genesis_widget_area ('topwrap', array(
+        'before' => '<div class="topwrapwrapper">',
+        'after' => '</div>',));
+    }
+add_action( 'genesis_after_header', 'cg_top_wrap_widgets' );
