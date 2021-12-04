@@ -987,8 +987,7 @@ figcaption,
 ---------------------------------------------------------------------------- */
 
 .site-header {
-	/* background-color: #fff; Changed by Colleen */
-	background-color: #253a3c; /* Changed by Colleen */
+	background-color: #474440; /* Changed by Colleen */
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
 }
@@ -1018,7 +1017,7 @@ figcaption,
 }
 
 .site-title {
-	font-size: 20px;
+	font-size: 30px; /* Changed from 20px to 30px by Colleen */
 	font-weight: 600;
 	line-height: 1;
 	margin-bottom: 0;
@@ -1027,7 +1026,6 @@ figcaption,
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	/* color: #333; Changed by Colleen */
 	color: #FFFFFF; /* Changed by Colleen */
 	text-decoration: none;
 }
@@ -1215,6 +1213,23 @@ figcaption,
 	padding-top: 15px;
 	width: 100%;
 }
+
+
+/* Top wrap widget before content, added by Colleen 
+---------------------------------------------- */
+
+.topwrapwrapper {
+	font-size: 115%;
+	font-style: italic !important;
+    	text-align: center !important;
+	padding-top: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	background-color: #667573; /* Changed by Colleen */
+	color: #FFFFFF;
+}
+
 
 /* Footer Menu
 --------------------------------------------- */
