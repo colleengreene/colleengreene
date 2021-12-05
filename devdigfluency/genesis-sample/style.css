@@ -992,6 +992,7 @@ figcaption,
 	padding: 0 30px;
 }
 
+
 /* Title Area
 --------------------------------------------- */
 
@@ -1058,9 +1059,11 @@ figcaption,
 }
 
 .genesis-nav-menu a {
-	color: #333;
+	/* color: #333; Changed by Colleen */
+	color: #FFFFFF; /* Changed by Colleen */
 	display: block;
-	font-size: 15px;
+	/* font-size: 15px; Changed by Colleen */
+	font-size: 100%; /* Changed by Colleen */
 	font-weight: 400;
 	outline-offset: -1px;
 	padding-bottom: 12px;
@@ -1073,9 +1076,17 @@ figcaption,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #0073e5;
-	text-decoration: none;
+	color: #FFFFFF; /* Changed by Colleen */
+	text-decoration: underline; /* Changed by Colleen */
 }
+
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #FFFFFF; /* Changed by Colleen */
+	/* text-decoration: none; Changed by Colleen */
+	text-decoration: underline; /* Changed by Colleen */
+}
+
 
 .genesis-nav-menu .sub-menu,
 .genesis-nav-menu .sub-menu a {
