@@ -1901,4 +1901,11 @@ img.rcornersred {
 	padding: 5px;
 }
 
+/* Styles the Jetpack subscribe button */
+
+#subscribe-submit button {
+    color: #FFFFFF !important;
+    background: #970C10 !important;
+}
+
 
