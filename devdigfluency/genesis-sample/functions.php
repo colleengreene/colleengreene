@@ -308,3 +308,13 @@ function sp_share_buttons_above_post( $content = '' ) {
 		return $content;
 	}
 }
+
+
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p>&copy; 2021– <?php echo date('Y'); ?> <a title="Developing Digital Fluency" href="https://www.developingdigitalfluency.com">Developing Digital Fluency</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="https://www.developingdigitalfluency.com/wp-admin">Admin</a></p>
+	<?php
+}
