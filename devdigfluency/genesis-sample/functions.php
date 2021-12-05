@@ -318,3 +318,7 @@ function sp_custom_footer() {
 	<p>&copy; 2021– <?php echo date('Y'); ?> <a title="Developing Digital Fluency" href="https://www.developingdigitalfluency.com">Developing Digital Fluency</a> &middot; Powered by <a title="WordPress" href="http://wordpress.org/">WordPress</a>  &middot; <a title="Site Administration" href="https://www.developingdigitalfluency.com/wp-admin">Admin</a></p>
 	<?php
 }
+
+
+//* Display author box on single posts
+// add_filter( 'get_the_author_genesis_author_box_single', '__return_true' ); Hidden by Colleen
