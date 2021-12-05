@@ -1320,7 +1320,8 @@ p.entry-meta {
 }
 
 .entry-footer .entry-meta {
-	border-top: 1px solid #eee;
+	/* border-top: 1px solid #eee; Changed by Colleen */
+	border-top: 1px solid #970C10; /* Changed by Colleen */
 	padding-top: 20px;
 }
 
