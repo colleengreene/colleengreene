@@ -2104,58 +2104,6 @@ img.rcorners {
 	text-align: center;
 }
 
-.instagram-page .entry-title {
-	display: none;
-}
 
-.instagram-page .entry {
-	padding: 30px 0 !important;
-}
-
-.instagram-page .menu-item {
-	border: 1px solid #ae9d78;
-	margin-bottom: 20px;
-	padding: 5px 20px !important;
-	text-align: center;
-	text-decoration: none;
-}
-
-.instagram-page .menu-item a,
-.instagram-page a {
-	border-bottom: 0;
-	text-decoration: none;
-}
-
-.instagram-page h3, .instagram-page .widget-title {
-	text-align: center;
-}
-
-.instagram-page .instagram-menu .widget ul > li:last-of-type {
-	padding: 5px 20px !important;
-}
-
-.instagram-page .user-profile .alignleft {
-	display: table;
-	float: none;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.instagram-page .avatar {
-	border-radius: 100%;
-	float: none;
-	height: auto;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.instagram-page .footer-widgets {
-	display: none;
-}
-
-.instagram-page .enews-widget {
-	background: #faf7f2 none repeat scroll 0 0;
-	padding: 20px;
-	text-align: center;
 }
 

@@ -501,26 +501,6 @@ function alpha_order_guide( $query ) {
 add_action( 'pre_get_posts', 'alpha_order_guide' );
 
 
-//*** Start Instagram Landing Page Changes ***
-
-//* Add Page Widget Area to Content - HTML5 only
-add_action( 'genesis_entry_footer', 'custom_instagram_menu_add_page_content' );
-function custom_instagram_menu_add_page_content() {
-	if ( is_page_template( 'landing-instagram.php' ) ) {
-	genesis_widget_area ('instagram-landing-page-widget', array(
-        'before' => '<div class="instagram-landing-page-widget"><div class="wrap">',
-        'after' => '</div></div>',
-	) );
-	}
-}
-
-//* Register Instagram Landing Page Widget Area
-genesis_register_sidebar( array(
-	'id'		=> 'instagram-landing-page-widget',
-	'name'		=> __( 'Instagram Menu'),
-	'description'	=> __( 'This is the widget area for your custom Instagram Menu.'),
-) );
-
 
 //* End changes by Colleen
 
