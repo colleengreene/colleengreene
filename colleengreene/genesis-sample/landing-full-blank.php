@@ -4,6 +4,13 @@
 * Description: Template for a custom landing page page that is full width and blank with default elements.
 */
 
+// Add custom body class to the head
+add_filter( 'body_class', 'crg_add_body_class' );
+function crg_add_body_class( $classes ) {
+   $classes[] = 'landing-full-blank';
+   return $classes;
+}
+
 // this removes the site header
 remove_action( 'genesis_header', 'genesis_do_header' );
 
