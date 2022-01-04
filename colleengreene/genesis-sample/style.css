@@ -1304,13 +1304,13 @@ img.alignright,
 ---------------------------------------------- */
 
 .topwrapwrapper {
-	font-size: 115%;
+	font-size: 110%;
 	font-style: italic !important;
     	text-align: center !important;
-	padding-top: 15px;
+	padding-top: 5px;
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	background-color: #355356;
 	color: #f5f5f5
 }
