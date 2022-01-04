@@ -1,13 +1,13 @@
 <?php
 /**
-* Template Name: Landing Full Blank
-* Description: Template for a custom landing page page that is full width and blank with default elements.
+* Template Name: Landing Instagram
+* Description: Template for a custom Instagram landing page page that is full width and blank with default elements.
 */
 
 // Add custom body class to the head
 add_filter( 'body_class', 'crg_add_body_class' );
 function crg_add_body_class( $classes ) {
-   $classes[] = 'landing-full-blank';
+   $classes[] = 'landing-instagram';
    return $classes;
 }
 
