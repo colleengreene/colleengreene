@@ -1995,6 +1995,19 @@ p.entry-meta {
 /* End Tip Box */
 
 
+/* Start Disclaimer / Attention Box */
+
+.attn-box {
+	border:1px dotted c9c9c9;
+	font-size:85%;
+	position:relative;
+	margin:2px 0 2px 0;
+	overflow:hidden;
+	padding: 1em;
+}
+
+/* End Disclaimer / Attention Box */
+
 
 /* Sign Up Box added by Colleen */
 
