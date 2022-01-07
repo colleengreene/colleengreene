@@ -1994,6 +1994,8 @@ p.entry-meta {
 
 /* End Tip Box */
 
+
+
 /* Sign Up Box added by Colleen */
 
 .signup-box {
@@ -2082,28 +2084,4 @@ img.rcorners {
   	padding: 5px;
 }
 
-
-/* Changes to Custom Instagram Landing Page */
-
-/* # Custom Instagram Page for Menu Sharing on Instagram
----------------------------------------------------------------------------------------------------- */
-
-.instagram-page .site-container {
-/*	background: #fff;*/
-	margin: 0 auto;
-	max-width: 800px;
-}
-
-.instagram-page .site-inner {
-	background: #fff none repeat scroll 0 0;
-	margin: 30px 25px;
-	padding: 25px;
-}
-
-.instagram-page p {
-	text-align: center;
-}
-
-
-}
 
