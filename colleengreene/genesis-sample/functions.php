@@ -246,7 +246,7 @@ function sp_share_buttons_above_post( $content = '' ) {
 
 /* Add eNews Signup Box before Select Posts */
 function enews_signup_box() {
-if ( is_single() && in_category(array('Mexican Genealogy', 'Mexican-American Genealogy', 'Hispanic Genealogy'))) { ?>
+if ( is_single() && has_category(array('Mexican Genealogy', 'Mexican-American Genealogy', 'Hispanic Genealogy'))) { ?>
 
 <!-- Start Sign UP Box -->
 <div class="signup-box"><span class="signup-box-heading">Hispanic Genealogy Tips &amp; News</span>
