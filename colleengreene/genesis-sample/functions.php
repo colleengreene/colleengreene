@@ -334,37 +334,6 @@ function create_post_type_cg_workshop() { // must give each function a unique na
 }
 
 
-//* Create custom Guides post types
-add_action( 'init', 'create_post_type_cg_guide' );
-function create_post_type_cg_guide() { // must give each function a unique name
-
-// Guide custom post type
-
-  register_post_type( 'cg_guide',
-    array(
-      'labels' => array(
-        'name' => __( 'My Guides' ),
-        'singular_name' => __( 'Guide' ),
-	 'search_items' => _( 'Search Guides' ),
-	 'all_items' => _( 'All Guides' ),
-	 'edit_item' => _( 'Edit Guide' ),
-	 'update_item' => _( 'Update Guide' ),
-	 'add_new_item' => _( 'Add New Guide' ),
-	 'new_item_name' => _( 'New Guide Name' ),
-	 'menu_name' => _( 'My Guides' ),
-      ),
-      'public' => true,
-      'hierarchical' => true,
-      'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
-      'taxonomies' => array( 'category', 'post_tag'),
-      'has_archive' => true,
-	'query_var' => true,
-	'rewrite' => array( 'slug' => 'guides' ),
-    )
-  );
-}
-
-
 
 
 
