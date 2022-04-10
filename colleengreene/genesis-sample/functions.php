@@ -490,17 +490,6 @@ function cg_workshop( $query ) {
 add_action( 'pre_get_posts', 'cg_workshop' );
 
 
-// function and action to order Guides CPT alphabetically
-
-function alpha_order_guide( $query ) {
-    if ( $query->is_post_type_archive('cg_guide') && $query->is_main_query() ) {
-        $query->set( 'orderby', 'title' );
-        $query->set( 'order', 'ASC' );
-    }
-}
-
-add_action( 'pre_get_posts', 'alpha_order_guide' );
-
 
 
 //* End changes by Colleen
