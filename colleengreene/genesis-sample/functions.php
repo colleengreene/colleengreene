@@ -272,36 +272,6 @@ function sp_custom_footer() {
 }
 
 
-//* Create custom Lectures post type
-add_action( 'init', 'create_post_type_cg_lecture' );
-function create_post_type_cg_lecture() { // must give each function a unique name
-
-// Lecture custom post type
-
-  register_post_type( 'cg_lecture',
-    array(
-      'labels' => array(
-        'name' => __( 'My Lectures' ),
-        'singular_name' => __( 'Lecture' ),
-	 'search_items' => _( 'Search Lectures' ),
-	 'all_items' => _( 'All Lectures' ),
-	 'edit_item' => _( 'Edit Lecture' ),
-	 'update_item' => _( 'Update Lecture' ),
-	 'add_new_item' => _( 'Add New Lecture' ),
-	 'new_item_name' => _( 'New Lecture Name' ),
-	 'menu_name' => _( 'My Lectures' ),
-      ),
-      'public' => true,
-      'hierarchical' => true,
-      'supports' => array( 'title', 'editor', 'thumbnail', 'genesis-seo', 'excerpt', 'author', 'comments', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-cpt-archives-settings'),
-      'taxonomies' => array( 'category', 'post_tag'),
-      'has_archive' => true,
-	'query_var' => true,
-	'rewrite' => array( 'slug' => 'lectures' ),
-    )
-  );
-}
-
 
 
 
