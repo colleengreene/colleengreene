@@ -365,39 +365,6 @@ function create_post_type_cg_guide() { // must give each function a unique name
 }
 
 
-//* Create custom Teaching Topic taxonomy 
-add_action( 'init', 'create_cg_teaching_taxonomy' );
-function create_cg_teaching_taxonomy() {
-$labels = array(
-	'name' => 'Teaching Topics',
-	'singular_name' => 'Teaching Topic',
-	'search_items' => 'Search Teaching Topics',
-	'all_items' => 'All Teaching Topics',
-	'edit_item' => 'Edit Teaching Topic',
-	'update_item' => 'Update Teaching Topic',
-	'add_new_item' => 'Add New Teaching Topic',
-	'new_item_name' => 'New Teaching Topic',
-	'menu_name' => 'Teaching Topics',
-	'view_item' => 'View Teaching Topic',
-	'popular_items' => 'Popular Teaching Topics',
-	'add_or_remove_items' => 'Add or remove teaching topics',
-	'choose_from_most_used' => 'Choose from the most used teaching topics',
-	'not_found' => 'No teaching topics found'
-);
-register_taxonomy(
-	'cg_teaching',
-	array('cg_lecture', 'cg_workshop'), //An array of post types that share this taxonomy
-	array(
-		'label' => __( 'Teaching Topics' ),
-		'hierarchical' => true, //Has to be true for drop-down list instead of free-written tags
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'speaking/topics' ),
-		'labels' => $labels
-	)
-);
-}
-
-
 
 
 
